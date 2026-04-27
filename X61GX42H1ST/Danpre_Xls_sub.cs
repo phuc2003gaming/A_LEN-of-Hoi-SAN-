@@ -775,8 +775,8 @@ namespace X61GX42H1ST
             ConvHook,       // コンビニフック--new
             Site_Table,     // サイトデーブル--new
             Robot,          // ロボット--new
-            Backboard,      // バックポード--new
-            Ottoman,        // オットマン-- new
+            Backboard,      // ﾊﾞｯｸﾎﾟｰﾄ--new
+            Ottoman,        // ｵｯﾄﾏﾝ-- new
             count           // 数
         }
 //<<=====================================================================================

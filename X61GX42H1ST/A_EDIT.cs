@@ -152,6 +152,8 @@ namespace X61GX42H1ST
                 m_Combo[5].Text = Convert.ToString(m_row[6]);  // 向け先
             }
 
+
+
             MDB_READ3();    // 車種情報マスタの読込み
             Application.DoEvents();
             MDB_READ4();    // レシピマスタの読込み
@@ -227,15 +229,33 @@ namespace X61GX42H1ST
 //<<=====================================================================================
                             else
                             {
-                                MDB_WRITE1();     // 車種情報Ｔの新規書込み/更新
-                                MDB_WRITE2();     // 車種情報Ｍの新規書込み/更新
+                                try
+                                {
+                                    MDB_WRITE1();     // 車種情報Ｔの新規書込み/更新
+                                    MDB_WRITE2();     // 車種情報Ｍの新規書込み/更新
+                                }
+                                catch (Exception)
+                                {
+
+                                    throw;
+                                }
+                            
 
                                 MessageBox.Show("書込み完了", Title);
 
                                 // 再描画
                                 Key_code1 = m_Combo[0].Text.ToString();
-                                MDB_READ3();    // 車種情報マスタの読込み
-                                MDB_READ4();    // レシピマスタの読込み
+                                try
+                                {
+                                    MDB_READ3();    // 車種情報マスタの読込み
+                                    MDB_READ4();    // レシピマスタの読込み
+                                }
+                                catch (Exception)
+                                {
+
+                                    throw;
+                                }
+                                
 
                                 for (int i = 0; i <= 5; i++) {  // セル位置を先頭に移動
                                     m_c1FlexGrid1[i].Row = 1;
@@ -794,10 +814,7 @@ namespace X61GX42H1ST
                             {
                                 if (Conversion.Val(RS["レシピ№"]) != 0)
                                 {
-                                    // KEY POINT:
-                                    // DB stores タブＧＰ as: 0=LH Pat1, 1=LH Pat2, 2=LH Pat3, 3=RH Pat1, 4=RH Pat2, 5=RH Pat3
-                                    // m_c1FlexGrid1 array is:  [0]=LH Pat1, [1]=LH Pat2, [2]=LH Pat3, [3]=RH Pat1, [4]=RH Pat2, [5]=RH Pat3
-                                    // Therefore: m_c1FlexGrid1[i] where i = DB タブＧＰ is ALWAYS correct. No conversion needed.
+                                   
                                     i = (int)Conversion.Val(RS["タブＧＰ"]);
 
                                     // Row counter per grid
@@ -1017,7 +1034,8 @@ namespace X61GX42H1ST
                                             // 新規書込み
                                             SQl  = "INSERT INTO T_車種情報Ｔ ";
                                             SQl += "(識別コード,タブＧＰ,治具タイプ,治具切出し順,1st治具ストック段,2nd治具ストック段,向先,ｼｰﾄﾀｲﾌﾟ,AGﾀｲﾌﾟ,ﾋｰﾀｰ,ﾊﾞｯｸﾙ,ﾍｯﾄﾞﾚｽﾄ,着座ｾﾝｻｰ,空調,";
-                                            SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,ﾀﾝﾌﾞﾙ,ISOFIX,ﾃｻﾞｰ,ｵｯﾄﾏﾝ,ｺﾝﾋﾞﾆﾌｯｸ,ｻｲﾄﾞﾃｰﾌﾞﾙ,ﾛﾎﾞｯﾄ,";
+                                            SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,QRG,ISOFIX,ﾊﾞｯｸﾎﾞｰﾄﾞ,ｵｯﾄﾏﾝ,ｺﾝﾋﾞﾆﾌｯｸ,ｻｲﾄﾞﾃｰﾌﾞﾙ,ﾛﾎﾞｯﾄ,";
+                                            //SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,ﾀﾝﾌﾞﾙ,ISOFIX,ﾃｻﾞｰ,ｵｯﾄﾏﾝ,ｺﾝﾋﾞﾆﾌｯｸ,ｻｲﾄﾞﾃｰﾌﾞﾙ,ﾛﾎﾞｯﾄ,";
                                             SQl += "作業パターン,レシピ№,ST0101,ST0102,ST0103,ST0104,ST0105,ST0106,ST0107,ST0108,ST0109,ST0110,ST0111,ST0112,ST0113,ST0114,ST0115,ST0116) VALUES ";
                                             SQl += "(";
                                             SQl += "'" + m_Combo[0].Text + "',";
@@ -1146,9 +1164,9 @@ namespace X61GX42H1ST
                                                     SQl += "背面ﾎﾟｹｯﾄ = '"     + m_Combo[16].Text + "',";
                                                     SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '"    + m_Combo[17].Text + "',";
                                                     SQl += "ｱｰﾑﾚｽﾄ = '"        + m_Combo[18].Text + "',";
-                                                    SQl += "ﾀﾝﾌﾞﾙ = '"         + m_Combo[19].Text + "',";
+                                                    SQl += "QRG = '"       + m_Combo[19].Text + "',";
                                                     SQl += "ISOFIX = '"        + m_Combo[20].Text + "',";
-                                                    SQl += "ﾃｻﾞｰ = '"          + m_Combo[21].Text + "',";
+                                                    SQl += "ﾊﾞｯｸﾎﾞｰﾄﾞ = '" + m_Combo[21].Text + "',";
                                                     SQl += "ｵｯﾄﾏﾝ = '"         + m_Combo[22].Text + "',";
                                                     SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '"      + m_Combo[40].Text + "',";
                                                     SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '"     + m_Combo[41].Text + "',";
@@ -1170,9 +1188,9 @@ namespace X61GX42H1ST
                                                     SQl += "背面ﾎﾟｹｯﾄ = '"    + m_Combo[33].Text + "',";
                                                     SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '"   + m_Combo[34].Text + "',";
                                                     SQl += "ｱｰﾑﾚｽﾄ = '"       + m_Combo[35].Text + "',";
-                                                    SQl += "ﾀﾝﾌﾞﾙ = '"        + m_Combo[36].Text + "',";
+                                                    SQl += "QRG = '" + m_Combo[36].Text + "',";
                                                     SQl += "ISOFIX = '"       + m_Combo[37].Text + "',";
-                                                    SQl += "ﾃｻﾞｰ = '"         + m_Combo[38].Text + "',";
+                                                    SQl += "ﾊﾞｯｸﾎﾞｰﾄﾞ = '" + m_Combo[38].Text + "',";
                                                     SQl += "ｵｯﾄﾏﾝ = '"        + m_Combo[39].Text + "',";
                                                     SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '"     + m_Combo[42].Text + "',";
                                                     SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '"    + m_Combo[43].Text + "',";

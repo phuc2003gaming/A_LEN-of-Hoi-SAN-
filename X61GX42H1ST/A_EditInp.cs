@@ -53,8 +53,8 @@ namespace X61GX42H1ST
             {
                 comboBox1.SelectedItem = "";
             }
-
-            for(int i = 2; i <= 17; i++)
+           // SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,QRG,ISOFIX,ﾊﾞｯｸﾎﾞｰﾄﾞ,ｵｯﾄﾏﾝ,ﾛﾎﾞｯﾄ,ｺﾝﾋﾞﾆﾌｯｸ";
+            for (int i = 2; i <= 17; i++)
             {
                 m_TextBox[i-2].Text = Convert.ToString(m_c1FlexGrid.GetData(m_c1FlexGrid.Row, i));  // 回数設定値を移す
             }
