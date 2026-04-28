@@ -1,30 +1,31 @@
-﻿using System;
+﻿using C1.Win.C1FlexGrid;
+using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;        // データベース
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using Microsoft.VisualBasic;
-using System.Data.OleDb;        // データベース
-using C1.Win.C1FlexGrid;
+using Label = System.Windows.Forms.Label;
 
 namespace X61GX42H1ST
 {
     public partial class A_EDIT : Form
     {
-        private          string          Key_code1;
-        private          bool            m_init;
+        private string Key_code1;
+        private bool m_init;
 
         // プライベート変数
-        private static   A_EDIT          m_Dlg = null;
-        private readonly ComboBox[]      m_Combo;
-        private readonly C1FlexGrid[]    m_c1FlexGrid1;
+        private static A_EDIT m_Dlg = null;
+        private readonly ComboBox[] m_Combo;
+        private readonly C1FlexGrid[] m_c1FlexGrid1;
 
-        private static   Row             m_row;
+        private static Row m_row;
 
         /// <summary>
         /// クラスのコンストラクタ
@@ -42,15 +43,15 @@ namespace X61GX42H1ST
                 comboBox1_33, comboBox1_34, comboBox1_35, comboBox1_36, comboBox1_37, comboBox1_38, comboBox1_39, comboBox1_40,
                 comboBox1_41, comboBox1_42, comboBox1_43, comboBox1_44, comboBox1_45,
             };
-// [2025/06/24] p.hoi==================================================================>>
+            // [2025/06/24] p.hoi==================================================================>>
             /*m_c1FlexGrid1 = new C1FlexGrid[] {
                 c1FlexGrid1_0, c1FlexGrid1_1, c1FlexGrid1_2, c1FlexGrid1_3, c1FlexGrid1_4, c1FlexGrid1_5
             };*/
-// MODIFY
+            // MODIFY
             m_c1FlexGrid1 = new C1FlexGrid[] {
                 c1FlexGrid1_0, c1FlexGrid1_2, c1FlexGrid1_4, c1FlexGrid1_1, c1FlexGrid1_3, c1FlexGrid1_5
             };
-//<<=====================================================================================
+            //<<=====================================================================================
 
             m_init = false;
             label45.Visible = false;
@@ -61,6 +62,7 @@ namespace X61GX42H1ST
             comboBox1_20.Visible = false;
             comboBox1_35.Visible = false;
             comboBox1_37.Visible = false;
+            FitAllLabels(this);
         }
 
         /// <summary>
@@ -72,23 +74,25 @@ namespace X61GX42H1ST
             int i; // カウンター変数
             int k; // ウンター変数
 
-            for (k = 0; k < m_c1FlexGrid1.Count(); k++){ 
+            for (k = 0; k < m_c1FlexGrid1.Count(); k++)
+            {
                 // グリッド初期設定
-                m_c1FlexGrid1[k].FocusRect               = FocusRectEnum.Heavy;  // セルを強調表示
-                m_c1FlexGrid1[k].Rows.Count              = 100;                  // 行の総数
-                m_c1FlexGrid1[k].Cols.Count              = 18;                   // 列の総数
-                m_c1FlexGrid1[k].Rows.Fixed              = 1;                    // 固定行の総数
-                m_c1FlexGrid1[k].Cols.Fixed              = 2;                    // 固定列の総数
+                m_c1FlexGrid1[k].FocusRect = FocusRectEnum.Heavy;  // セルを強調表示
+                m_c1FlexGrid1[k].Rows.Count = 100;                  // 行の総数
+                m_c1FlexGrid1[k].Cols.Count = 18;                   // 列の総数
+                m_c1FlexGrid1[k].Rows.Fixed = 1;                    // 固定行の総数
+                m_c1FlexGrid1[k].Cols.Fixed = 2;                    // 固定列の総数
 
 
                 //m_c1FlexGrid1[k].Row = 0;        //行の指定
-                m_c1FlexGrid1[k].Cols[0].Width           = Pixel(12 * 60);       // 列幅の設定
-                m_c1FlexGrid1[k].Cols[1].Width           = Pixel(12 * 350);
+                m_c1FlexGrid1[k].Cols[0].Width = Pixel(12 * 60);       // 列幅の設定
+                m_c1FlexGrid1[k].Cols[1].Width = Pixel(12 * 350);
 
 
-                for (i = 2; i < m_c1FlexGrid1[k].Cols.Count; i++){ 
-                    if(i <= 17) m_c1FlexGrid1[k].Cols[i].Width = Pixel(12 * 50);
-                    else        m_c1FlexGrid1[k].Cols[i].Width = 0;
+                for (i = 2; i < m_c1FlexGrid1[k].Cols.Count; i++)
+                {
+                    if (i <= 17) m_c1FlexGrid1[k].Cols[i].Width = Pixel(12 * 50);
+                    else m_c1FlexGrid1[k].Cols[i].Width = 0;
                 }
 
                 // 全行幅の設定
@@ -96,29 +100,30 @@ namespace X61GX42H1ST
 
                 // セル内のテキスト表示位置
                 //m_c1FlexGrid1[k].Cols[0].TextAlignFixed  = TextAlignEnum.CenterCenter;
-                for (i = 0; i < m_c1FlexGrid1[k].Cols.Count; i++){
-                    if(i == 1) m_c1FlexGrid1[k].Cols[i].TextAlign = TextAlignEnum.LeftCenter;
-                    else       m_c1FlexGrid1[k].Cols[i].TextAlign = TextAlignEnum.CenterCenter;
+                for (i = 0; i < m_c1FlexGrid1[k].Cols.Count; i++)
+                {
+                    if (i == 1) m_c1FlexGrid1[k].Cols[i].TextAlign = TextAlignEnum.LeftCenter;
+                    else m_c1FlexGrid1[k].Cols[i].TextAlign = TextAlignEnum.CenterCenter;
                 }
                 //c1FlexGrid1.Col = 0;        //列の指定
 
                 // ヘッダ部のセル内のテキスト表示位置
                 m_c1FlexGrid1[k].Rows[0].TextAlignFixed = TextAlignEnum.CenterCenter;
-                m_c1FlexGrid1[k].Rows[0].TextAlign      = TextAlignEnum.CenterCenter;
+                m_c1FlexGrid1[k].Rows[0].TextAlign = TextAlignEnum.CenterCenter;
 
                 //列のタイトル設定
-                m_c1FlexGrid1[k][0,  0] = "ﾚｼﾋﾟ№";
-                m_c1FlexGrid1[k][0,  1] = "レシピ名";
-        //             .Row = 0: .Col = 2: .Text = "仕　様"
-        //             .CellAlignment = flexAlignCenterCenter
-                m_c1FlexGrid1[k][0,  2] = "ST1";
-                m_c1FlexGrid1[k][0,  3] = "ST2";
-                m_c1FlexGrid1[k][0,  4] = "ST3";
-                m_c1FlexGrid1[k][0,  5] = "ST4";
-                m_c1FlexGrid1[k][0,  6] = "ST5";
-                m_c1FlexGrid1[k][0,  7] = "ST6";
-                m_c1FlexGrid1[k][0,  8] = "ST7";
-                m_c1FlexGrid1[k][0,  9] = "ST8";
+                m_c1FlexGrid1[k][0, 0] = "ﾚｼﾋﾟ№";
+                m_c1FlexGrid1[k][0, 1] = "レシピ名";
+                //             .Row = 0: .Col = 2: .Text = "仕　様"
+                //             .CellAlignment = flexAlignCenterCenter
+                m_c1FlexGrid1[k][0, 2] = "ST1";
+                m_c1FlexGrid1[k][0, 3] = "ST2";
+                m_c1FlexGrid1[k][0, 4] = "ST3";
+                m_c1FlexGrid1[k][0, 5] = "ST4";
+                m_c1FlexGrid1[k][0, 6] = "ST5";
+                m_c1FlexGrid1[k][0, 7] = "ST6";
+                m_c1FlexGrid1[k][0, 8] = "ST7";
+                m_c1FlexGrid1[k][0, 9] = "ST8";
                 m_c1FlexGrid1[k][0, 10] = "ST9";
                 m_c1FlexGrid1[k][0, 11] = "ST10";
                 m_c1FlexGrid1[k][0, 12] = "ST11";
@@ -135,13 +140,13 @@ namespace X61GX42H1ST
 
             for (i = 1; i < m_Combo.Count(); i++)
             {
-                if(m_Combo[i] != null)
+                if (m_Combo[i] != null)
                 {
                     m_Combo[i].Items.Add("");
                 }
             }
 
-            Key_code1               = Convert.ToString(m_row[1]);
+            Key_code1 = Convert.ToString(m_row[1]);
             m_Combo[0].Text = Key_code1;        // 識別コード
             if (Key_code1 != "")
             {
@@ -158,15 +163,43 @@ namespace X61GX42H1ST
             Application.DoEvents();
             MDB_READ4();    // レシピマスタの読込み
 
-            for (i = 0; i <= 5; i++) {  // セル位置を先頭に移動
+            for (i = 0; i <= 5; i++)
+            {  // セル位置を先頭に移動
                 m_c1FlexGrid1[i].Row = 1;
                 m_c1FlexGrid1[i].Col = 1;
             }
 
             Application.DoEvents();
         }
+        #region // filltext
+        static void FitAllLabels(Control parent)
+        {
+            foreach (Label lbl in parent.Controls.OfType<Label>())
+            {
+                FitLabelText(lbl);
+            }
+        }
+        static void FitLabelText(Label lbl)
+        {
+            int fontSize = (int)lbl.Font.Size;
 
+            while (fontSize > 1)
+            {
+                using (var font = new Font(lbl.Font.FontFamily, fontSize, lbl.Font.Style))
+                {
+                    Size textSize = TextRenderer.MeasureText(lbl.Text,new Font(lbl.Font.FontFamily, fontSize, lbl.Font.Style),lbl.Size,TextFormatFlags.WordBreak);
 
+                    if (textSize.Width <= lbl.Width && textSize.Height <= lbl.Height)
+                    {
+                        lbl.Font = font;
+                        return;
+                    }
+
+                    fontSize--;
+                }
+            }
+        }
+        #endregion
         /// <summary>
         /// 「識別コード」選択処理
         /// </summary>
@@ -189,10 +222,10 @@ namespace X61GX42H1ST
         /// </summary>
         private void File_Command_Click(object sender, EventArgs e)
         {
-            var          clkdItem = sender as ToolStripMenuItem;
-            int          In_flg;
-            string       Msg;
-            string       Title;
+            var clkdItem = sender as ToolStripMenuItem;
+            int In_flg;
+            string Msg;
+            string Title;
             DialogResult dr;
 
             if ((clkdItem != null) &&
@@ -204,7 +237,7 @@ namespace X61GX42H1ST
                 switch (index)
                 {
                     case 0: // 保存
-                        Msg   = "ファイルに保存しますか?";         // メッセージを定義します。
+                        Msg = "ファイルに保存しますか?";         // メッセージを定義します。
                         Title = "ファイルに保存";                  // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
@@ -212,21 +245,21 @@ namespace X61GX42H1ST
                         if (dr == DialogResult.Yes)
                         {
                             In_flg = Input_Check(); // 入力データをチェック
-                            
-// [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
-//  コンボボックス値のチェックを追加
-//---------------------------------------------------------------------------------------
+
+                            // [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
+                            //  コンボボックス値のチェックを追加
+                            //---------------------------------------------------------------------------------------
                             /*if(In_flg == 1)
                             {
                                 Program.MessageBox("入力データに誤りっがあります　確認してください。");
                             }*/
-//---------------------------------------------------------------------------------------
-                            if(In_flg != -1)
+                            //---------------------------------------------------------------------------------------
+                            if (In_flg != -1)
                             {
                                 Program.MessageBox(m_Combo[In_flg].Tag +
                                                    "の選択に誤りがあります。確認してください。", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
-//<<=====================================================================================
+                            //<<=====================================================================================
                             else
                             {
                                 try
@@ -239,7 +272,7 @@ namespace X61GX42H1ST
 
                                     throw;
                                 }
-                            
+
 
                                 MessageBox.Show("書込み完了", Title);
 
@@ -255,9 +288,10 @@ namespace X61GX42H1ST
 
                                     throw;
                                 }
-                                
 
-                                for (int i = 0; i <= 5; i++) {  // セル位置を先頭に移動
+
+                                for (int i = 0; i <= 5; i++)
+                                {  // セル位置を先頭に移動
                                     m_c1FlexGrid1[i].Row = 1;
                                     m_c1FlexGrid1[i].Col = 1;
                                 }
@@ -267,7 +301,7 @@ namespace X61GX42H1ST
                         break;
 
                     case 1: // 終了
-                        Msg   = "ファイルに保存して終了しますか?";         // メッセージを定義します。
+                        Msg = "ファイルに保存して終了しますか?";         // メッセージを定義します。
                         Title = "終了";                                    // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
@@ -276,21 +310,21 @@ namespace X61GX42H1ST
                         {
                             case DialogResult.Yes:
                                 In_flg = Input_Check(); // 入力データをチェック
-                                
-// [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
-//  コンボボックス値のチェックを追加
-//---------------------------------------------------------------------------------------
+
+                                // [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
+                                //  コンボボックス値のチェックを追加
+                                //---------------------------------------------------------------------------------------
                                 /*if(In_flg == 1)
                                 {
                                     Program.MessageBox("入力データに誤りっがあります　確認してください。");
                                 }*/
-//---------------------------------------------------------------------------------------
-                                if(In_flg != -1)
+                                //---------------------------------------------------------------------------------------
+                                if (In_flg != -1)
                                 {
                                     Program.MessageBox(m_Combo[In_flg].Tag +
                                                        "の選択に誤りがあります。確認してください。", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
-//<<=====================================================================================
+                                //<<=====================================================================================
                                 else
                                 {
                                     MDB_WRITE1();     // 車種情報Ｔの新規書込み/更新
@@ -319,12 +353,12 @@ namespace X61GX42H1ST
         /// </summary>
         private void Edit_Command_Click(object sender, EventArgs e)
         {
-            var          clkdItem = sender as ToolStripMenuItem;
-            int          i;
-            int          j;
-            int          k;
-            string       Msg;
-            string       Title;
+            var clkdItem = sender as ToolStripMenuItem;
+            int i;
+            int j;
+            int k;
+            string Msg;
+            string Title;
             DialogResult dr;
 
 
@@ -337,24 +371,24 @@ namespace X61GX42H1ST
                 switch (index)
                 {
                     case 0: // 削除
-                        Msg   = "選択行を削除しますか?";      // メッセージを定義します。
+                        Msg = "選択行を削除しますか?";      // メッセージを定義します。
                         Title = "削除";                       // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
                         dr = MessageBox.Show(Msg, Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                         if (dr == DialogResult.Yes)
                         {
-// [2025/06/24] p.hoi==================================================================>>
+                            // [2025/06/24] p.hoi==================================================================>>
                             //int idx = tabControl1.SelectedIndex;
-// MODIFY
+                            // MODIFY
                             int idx = SelectedTabIndex;
-//<<=====================================================================================
+                            //<<=====================================================================================
 
                             Mdb_Del1(m_Combo[0].Text.ToString(),
-                                     Conversion.Str(idx), 
+                                     Conversion.Str(idx),
                                      m_c1FlexGrid1[idx].GetData(m_c1FlexGrid1[idx].Row, 0).ToString());
-                            
-                            for(i = 0; i <= (m_c1FlexGrid1[idx].Cols.Count - 1); i++)
+
+                            for (i = 0; i <= (m_c1FlexGrid1[idx].Cols.Count - 1); i++)
                             {
                                 m_c1FlexGrid1[idx].SetData(m_c1FlexGrid1[idx].Row, i, "");
                             }
@@ -362,18 +396,18 @@ namespace X61GX42H1ST
                         break;
 
                     case 1: // パターン１を展開
-                        Msg   = "パターン１を選択パターンに展開しますか？";      // メッセージを定義します。
+                        Msg = "パターン１を選択パターンに展開しますか？";      // メッセージを定義します。
                         Title = "パターン展開";                                  // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
                         dr = MessageBox.Show(Msg, Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                         if (dr == DialogResult.Yes)
                         {
-// [2025/06/24] p.hoi==================================================================>>
+                            // [2025/06/24] p.hoi==================================================================>>
                             //int idx = tabControl1.SelectedIndex;
-// MODIFY
+                            // MODIFY
                             int idx = SelectedTabIndex;
-//<<=====================================================================================
+                            //<<=====================================================================================
 
                             switch (idx)
                             {
@@ -400,18 +434,18 @@ namespace X61GX42H1ST
                         break;
 
                     case 2: // パターン２を展開
-                        Msg   = "パターン２を選択パターンに展開しますか？";      // メッセージを定義します。
+                        Msg = "パターン２を選択パターンに展開しますか？";      // メッセージを定義します。
                         Title = "パターン展開";                                  // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
                         dr = MessageBox.Show(Msg, Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
                         if (dr == DialogResult.Yes)
                         {
-// [2025/06/24] p.hoi==================================================================>>
+                            // [2025/06/24] p.hoi==================================================================>>
                             //int idx = tabControl1.SelectedIndex;
-// MODIFY
+                            // MODIFY
                             int idx = SelectedTabIndex;
-//<<=====================================================================================
+                            //<<=====================================================================================
 
                             switch (idx)
                             {
@@ -438,7 +472,7 @@ namespace X61GX42H1ST
                         break;
 
                     case 3: // Ｌ１をＲ１に展開
-                        Msg   = "１ｓｔ側パターン１を２ｎｄ側パターン１に展開しますか？";     // メッセージを定義します。
+                        Msg = "１ｓｔ側パターン１を２ｎｄ側パターン１に展開しますか？";     // メッセージを定義します。
                         Title = "パターン展開";                                               // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
@@ -456,7 +490,7 @@ namespace X61GX42H1ST
                         break;
 
                     case 4: // Ｌ２をＲ２に展開
-                        Msg   = "１ｓｔ側パターン２を２ｎｄ側パターン２に展開しますか？";      // メッセージを定義します。
+                        Msg = "１ｓｔ側パターン２を２ｎｄ側パターン２に展開しますか？";      // メッセージを定義します。
                         Title = "パターン展開";                                                // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
@@ -474,7 +508,7 @@ namespace X61GX42H1ST
                         break;
 
                     case 5: // Ｌ３をＲ３に展開
-                        Msg   = "１ｓｔ側パターン３を２ｎｄ側パターン３に展開しますか？";      // メッセージを定義します。
+                        Msg = "１ｓｔ側パターン３を２ｎｄ側パターン３に展開しますか？";      // メッセージを定義します。
                         Title = "パターン展開";                                                // タイトルを定義します。
 
                         // 確認ウィンドウを表示する
@@ -496,20 +530,20 @@ namespace X61GX42H1ST
                 }
             }
         }
-        
+
         /// <summary>
         /// ダブルクリック処理
         /// </summary>
         private void c1FlexGrid1_DoubleClick(object sender, EventArgs e)
         {
             // 「データ入力」ウィンドウを表示する
-// [2025/06/24] p.hoi==================================================================>>
+            // [2025/06/24] p.hoi==================================================================>>
             //A_EditInp.VisibleWindow(true, m_c1FlexGrid1[tabControl1.SelectedIndex]);
-// MODIFY
+            // MODIFY
             A_EditInp.VisibleWindow(true, m_c1FlexGrid1[SelectedTabIndex]);
-//<<=====================================================================================
+            //<<=====================================================================================
         }
-        
+
         /// <summary>
         /// 起動中ウィンドウを表示／非表示する
         /// </summary>
@@ -557,7 +591,7 @@ namespace X61GX42H1ST
         /***********************************************************************
             TWIP <-> Pixel 変換
         ***********************************************************************/
-        private const int   TWIPS   = 15;           // ピクセルあたりのツイップ値
+        private const int TWIPS = 15;           // ピクセルあたりのツイップ値
 
         // TWIP -> Pixel 変換
         private static int Pixel(int twip)
@@ -572,12 +606,12 @@ namespace X61GX42H1ST
         //**********************************************************************
 
         // 設定データチェックサブ
-        private int Input_Check() 
+        private int Input_Check()
         {
-// [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
-// 「データ入力」ウィンドウで入力値のチェックを行うため、再チェックは不要
-//  また、コンボボックス値のチェックを追加
-//---------------------------------------------------------------------------------------
+            // [2026/04/01][p.hoi][MODIFY、ADD]====================================================>>
+            // 「データ入力」ウィンドウで入力値のチェックを行うため、再チェックは不要
+            //  また、コンボボックス値のチェックを追加
+            //---------------------------------------------------------------------------------------
             /*int i;
             int j;
             int k;
@@ -620,28 +654,33 @@ namespace X61GX42H1ST
             }
             
             return (0);*/
-//---------------------------------------------------------------------------------------
-            for(int i = 1; i < m_Combo.Count(); i++) {
-                if(m_Combo[i] != null) {
-                    if(m_Combo[i].Text.Length > 0) {
+            //---------------------------------------------------------------------------------------
+            for (int i = 1; i < m_Combo.Count(); i++)
+            {
+                if (m_Combo[i] != null)
+                {
+                    if (m_Combo[i].Text.Length > 0)
+                    {
 
                         string[] str = m_Combo[i].Text.Trim().Split(':');   // 項目番号取込み
                         // 数字チェック
-                        if (int.TryParse(str[0].Normalize(NormalizationForm.FormKC), out _) != true) {
+                        if (int.TryParse(str[0].Normalize(NormalizationForm.FormKC), out _) != true)
+                        {
                             return (i);
                         }
 
                         // 全角→半角変換
                         m_Combo[i].Text = string.Concat(str[0].Normalize(NormalizationForm.FormKC), ":", str[1]);
                     }
-                    else {
+                    else
+                    {
                         return (i);
                     }
                 }
             }
 
             return (-1);
-//<<=====================================================================================
+            //<<=====================================================================================
         }
 
         // 車種情報の指定されたﾃﾞｰﾀを削除します
@@ -656,11 +695,12 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "DELETE * From T_車種情報Ｔ ";
+                    SQl = "DELETE * From T_車種情報Ｔ ";
                     SQl += "WHERE Trim(識別コード) = '" + Key_code1.Trim() + "'" + " AND " + "Trim(タブＧＰ) = '" + Key_code2.Trim() + "'" + " AND " + "Trim(レシピ№) = '" + Key_code3.Trim() + "'";
-                    
+
                     // 実行
-                    using (OleDbCommand cmd = new OleDbCommand(SQl, DB)) {
+                    using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
+                    {
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -672,7 +712,7 @@ namespace X61GX42H1ST
         }
 
         // 車種情報の識別コードの全てを削除します
-        private void Mdb_ALL_Del1() 
+        private void Mdb_ALL_Del1()
         {
             string SQl;
             string conStr = $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={Mdb_Module.DataBase1};";
@@ -683,11 +723,12 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "DELETE * From T_車種情報Ｍ ";
+                    SQl = "DELETE * From T_車種情報Ｍ ";
                     SQl += "WHERE Trim(識別コード) = '" + m_Combo[0].Text.Trim() + "' ";
-                    
+
                     // 実行
-                    using (OleDbCommand cmd = new OleDbCommand(SQl, DB)) {
+                    using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
+                    {
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -710,21 +751,22 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "select * from T_識別コード ";
+                    SQl = "select * from T_識別コード ";
                     SQl += "order by 識別コード";
 
                     using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
                     {
                         using (OleDbDataReader RS = cmd.ExecuteReader())
                         {
-                            if(RS.HasRows == true)
+                            if (RS.HasRows == true)
                             {
                                 // 「識別コード」コンボボックスのアイテムをクリア
                                 m_Combo[0].Items.Clear();
 
                                 while (RS.Read())
                                 {
-                                    if (Strings.Len(RS["識別コード"]) > 1) {
+                                    if (Strings.Len(RS["識別コード"]) > 1)
+                                    {
                                         m_Combo[0].Items.Add(Strings.Right(RS["識別コード"].ToString(), Strings.Len(RS["識別コード"]) - 1));
                                     }
                                 }
@@ -751,21 +793,22 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "select * from T_治具タイプ ";
+                    SQl = "select * from T_治具タイプ ";
                     SQl += "order by val(№)";
 
                     using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
                     {
                         using (OleDbDataReader RS = cmd.ExecuteReader())
                         {
-                            if(RS.HasRows == true)
+                            if (RS.HasRows == true)
                             {
                                 // 「治具タイプ」コンボボックスのアイテムをクリア
                                 m_Combo[1].Items.Clear();
 
                                 while (RS.Read())
                                 {
-                                    if (Strings.Len(RS["治具タイプ"]) > 1) {
+                                    if (Strings.Len(RS["治具タイプ"]) > 1)
+                                    {
                                         m_Combo[1].Items.Add(Strings.Right(RS["№"].ToString(), Strings.Len(RS["№"]) - 1) + ":" + Strings.Right(RS["治具タイプ"].ToString(), Strings.Len(RS["治具タイプ"]) - 1));
                                     }
                                 }
@@ -814,7 +857,7 @@ namespace X61GX42H1ST
                             {
                                 if (Conversion.Val(RS["レシピ№"]) != 0)
                                 {
-                                   
+
                                     i = (int)Conversion.Val(RS["タブＧＰ"]);
 
                                     // Row counter per grid
@@ -884,13 +927,13 @@ namespace X61GX42H1ST
                                                 m_Combo[42].Text = Convert.ToString(RS["ｺﾝﾋﾞﾆﾌｯｸ"]);
                                                 m_Combo[43].Text = Convert.ToString(RS["ｻｲﾄﾞﾃｰﾌﾞﾙ"]);
                                             }
-                                            
+
                                             if (Convert.ToString(RS["ﾛﾎﾞｯﾄ"]) != "")
                                                 m_Combo[45].Text = Convert.ToString(RS["ﾛﾎﾞｯﾄ"]);
                                             break;
                                     }
 
-                                    
+
                                     m_c1FlexGrid1[i].SetData(j, 0, Strings.Right(RS["レシピ№"].ToString(), Strings.Len(RS["レシピ№"]) - 1));
                                     m_c1FlexGrid1[i].SetData(j, 2, Strings.Right(RS["ST0101"].ToString(), Strings.Len(RS["ST0101"]) - 1));
                                     m_c1FlexGrid1[i].SetData(j, 3, Strings.Right(RS["ST0102"].ToString(), Strings.Len(RS["ST0102"]) - 1));
@@ -920,8 +963,8 @@ namespace X61GX42H1ST
         // レシピマスタの読込み
         private void MDB_READ4()
         {
-            int    i;
-            int    j;
+            int i;
+            int j;
             string SQl;
             string conStr = $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={Mdb_Module.DataBase1};";
 
@@ -931,12 +974,13 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    for(i = 0; i <= (tabControl1.TabCount - 1); i++)
+                    for (i = 0; i <= (tabControl1.TabCount - 1); i++)
                     {
                         for (j = 1; j <= (m_c1FlexGrid1[i].Rows.Count - 1); j++)
                         {
-                            if (Conversion.Val(m_c1FlexGrid1[i].GetData(j, 0)) != 0) {
-                                SQl  = "select * from T_ﾚｼﾋﾟ ";
+                            if (Conversion.Val(m_c1FlexGrid1[i].GetData(j, 0)) != 0)
+                            {
+                                SQl = "select * from T_ﾚｼﾋﾟ ";
                                 SQl += "WHERE Trim(レシピ№) = '" + m_c1FlexGrid1[i].GetData(j, 0).ToString().Trim() + "' ";
                                 using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
                                 {
@@ -974,7 +1018,7 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "select * from T_ＲＢプログラム ";
+                    SQl = "select * from T_ＲＢプログラム ";
                     SQl += "order by val(ＰＧ№)";
 
                     using (OleDbCommand cmd = new OleDbCommand(SQl, DB))
@@ -1005,8 +1049,8 @@ namespace X61GX42H1ST
         // 車種情報Ｔの新規書込み/更新
         private void MDB_WRITE1()
         {
-            int    i;
-            int    j;
+            int i;
+            int j;
             string SP;
             string SQl;
             string conStr = $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={Mdb_Module.DataBase1};";
@@ -1021,8 +1065,9 @@ namespace X61GX42H1ST
                     {
                         for (j = 1; j <= (m_c1FlexGrid1[i].Rows.Count - 1); j++)
                         {
-                            if (Conversion.Val(m_c1FlexGrid1[i].GetData(j, 0)) != 0) {
-                                SQl  = "select * from T_車種情報Ｔ ";
+                            if (Conversion.Val(m_c1FlexGrid1[i].GetData(j, 0)) != 0)
+                            {
+                                SQl = "select * from T_車種情報Ｔ ";
                                 SQl += "WHERE Trim(識別コード) = '" + m_Combo[0].Text + "'" + " AND " + "Trim(タブＧＰ) = '" + Conversion.Str(i).Trim() + "'" + " AND " + "Trim(レシピ№) = '" + m_c1FlexGrid1[i].GetData(j, 0) + "'";
 
                                 using (OleDbCommand cmd = new OleDbCommand(SQl, DB))    // 検索条件をセット
@@ -1032,7 +1077,7 @@ namespace X61GX42H1ST
                                         if (RS.HasRows != true)
                                         {
                                             // 新規書込み
-                                            SQl  = "INSERT INTO T_車種情報Ｔ ";
+                                            SQl = "INSERT INTO T_車種情報Ｔ ";
                                             SQl += "(識別コード,タブＧＰ,治具タイプ,治具切出し順,1st治具ストック段,2nd治具ストック段,向先,ｼｰﾄﾀｲﾌﾟ,AGﾀｲﾌﾟ,ﾋｰﾀｰ,ﾊﾞｯｸﾙ,ﾍｯﾄﾞﾚｽﾄ,着座ｾﾝｻｰ,空調,";
                                             SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,QRG,ISOFIX,ﾊﾞｯｸﾎﾞｰﾄﾞ,ｵｯﾄﾏﾝ,ｺﾝﾋﾞﾆﾌｯｸ,ｻｲﾄﾞﾃｰﾌﾞﾙ,ﾛﾎﾞｯﾄ,";
                                             //SQl += "表皮材,色,ﾗﾝﾊﾞｰ,背面ﾎﾟｹｯﾄ,ﾌｯﾄｳｴﾙﾗﾝﾌﾟ,ｱｰﾑﾚｽﾄ,ﾀﾝﾌﾞﾙ,ISOFIX,ﾃｻﾞｰ,ｵｯﾄﾏﾝ,ｺﾝﾋﾞﾆﾌｯｸ,ｻｲﾄﾞﾃｰﾌﾞﾙ,ﾛﾎﾞｯﾄ,";
@@ -1046,14 +1091,15 @@ namespace X61GX42H1ST
                                             SQl += "'" + m_Combo[4].Text + "',";
                                             SQl += "'" + m_Combo[5].Text + "',";
 
-                                            switch (i) {
+                                            switch (i)
+                                            {
                                                 case 0: // １ｓｔ側ｼｰﾄﾀｲﾌﾟ
                                                 case 1:
                                                 case 2:
-                                                    SQl += "'" + m_Combo[6 ].Text + "',";
-                                                    SQl += "'" + m_Combo[7 ].Text + "',";
-                                                    SQl += "'" + m_Combo[8 ].Text + "',";
-                                                    SQl += "'" + m_Combo[9 ].Text + "',";
+                                                    SQl += "'" + m_Combo[6].Text + "',";
+                                                    SQl += "'" + m_Combo[7].Text + "',";
+                                                    SQl += "'" + m_Combo[8].Text + "',";
+                                                    SQl += "'" + m_Combo[9].Text + "',";
                                                     SQl += "'" + m_Combo[10].Text + "',";
                                                     SQl += "'" + m_Combo[11].Text + "',";
                                                     SQl += "'" + m_Combo[12].Text + "',";
@@ -1097,7 +1143,8 @@ namespace X61GX42H1ST
                                                     break;
                                             }
 
-                                            switch (i) { // 作業パターン
+                                            switch (i)
+                                            { // 作業パターン
                                                 case 0:
                                                 case 3:
                                                     SP = " 1";
@@ -1116,15 +1163,15 @@ namespace X61GX42H1ST
                                             }
                                             SQl += "' " + SP + "' ,";
 
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 0 ) + "',"; // レシピ№
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 2 ) + "',"; // 1,作業回数
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 3 ) + "',"; // 2
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 4 ) + "',"; // 3
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 5 ) + "',"; // 4
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 6 ) + "',"; // 5
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 7 ) + "',"; // 6
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 8 ) + "',"; // 7
-                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 9 ) + "',"; // 8
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 0) + "',"; // レシピ№
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 2) + "',"; // 1,作業回数
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 3) + "',"; // 2
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 4) + "',"; // 3
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 5) + "',"; // 4
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 6) + "',"; // 5
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 7) + "',"; // 6
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 8) + "',"; // 7
+                                            SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 9) + "',"; // 8
                                             SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 10) + "',"; // 9
                                             SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 11) + "',"; // 10
                                             SQl += "'" + " " + m_c1FlexGrid1[i].GetData(j, 12) + "',"; // 11
@@ -1138,67 +1185,68 @@ namespace X61GX42H1ST
                                         else
                                         {
                                             // 更新
-                                            SQl  = "UPDATE T_車種情報Ｔ SET ";
-                                            SQl += "識別コード = '"        + m_Combo[0].Text + "',";
-                                            SQl += "タブＧＰ = '"          + Conversion.Str(i)       + "',";
-                                            SQl += "治具タイプ = '"        + m_Combo[1].Text + "',";
-                                            SQl += "治具切出し順 = '"      + m_Combo[2].Text + "',";
+                                            SQl = "UPDATE T_車種情報Ｔ SET ";
+                                            SQl += "識別コード = '" + m_Combo[0].Text + "',";
+                                            SQl += "タブＧＰ = '" + Conversion.Str(i) + "',";
+                                            SQl += "治具タイプ = '" + m_Combo[1].Text + "',";
+                                            SQl += "治具切出し順 = '" + m_Combo[2].Text + "',";
                                             SQl += "1st治具ストック段 = '" + m_Combo[3].Text + "',";
                                             SQl += "2nd治具ストック段 = '" + m_Combo[4].Text + "',";
-                                            SQl += "向先 = '"             + m_Combo[5].Text + "',";
+                                            SQl += "向先 = '" + m_Combo[5].Text + "',";
                                             switch (i)
                                             {
                                                 case 0: // １ｓｔ側ｼｰﾄﾀｲﾌﾟ
                                                 case 1:
                                                 case 2:
-                                                    SQl += "ｼｰﾄﾀｲﾌﾟ = '"       + m_Combo[6 ].Text + "',";
-                                                    SQl += "AGﾀｲﾌﾟ = '"        + m_Combo[7 ].Text + "',";
-                                                    SQl += "ﾋｰﾀｰ = '"          + m_Combo[8 ].Text + "',";
-                                                    SQl += "ﾊﾞｯｸﾙ = '"         + m_Combo[9 ].Text + "',";
-                                                    SQl += "ﾍｯﾄﾞﾚｽﾄ = '"       + m_Combo[10].Text + "',";
-                                                    SQl += "着座ｾﾝｻｰ = '"      + m_Combo[11].Text + "',";
-                                                    SQl += "空調 = '"          + m_Combo[12].Text + "',";
-                                                    SQl += "表皮材 = '"        + m_Combo[13].Text + "',";
+                                                    SQl += "ｼｰﾄﾀｲﾌﾟ = '" + m_Combo[6].Text + "',";
+                                                    SQl += "AGﾀｲﾌﾟ = '" + m_Combo[7].Text + "',";
+                                                    SQl += "ﾋｰﾀｰ = '" + m_Combo[8].Text + "',";
+                                                    SQl += "ﾊﾞｯｸﾙ = '" + m_Combo[9].Text + "',";
+                                                    SQl += "ﾍｯﾄﾞﾚｽﾄ = '" + m_Combo[10].Text + "',";
+                                                    SQl += "着座ｾﾝｻｰ = '" + m_Combo[11].Text + "',";
+                                                    SQl += "空調 = '" + m_Combo[12].Text + "',";
+                                                    SQl += "表皮材 = '" + m_Combo[13].Text + "',";
                                                     SQl += "色 = '" + m_Combo[14].Text + "',";
-                                                    SQl += "ﾗﾝﾊﾞｰ = '"         + m_Combo[15].Text + "',";
-                                                    SQl += "背面ﾎﾟｹｯﾄ = '"     + m_Combo[16].Text + "',";
-                                                    SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '"    + m_Combo[17].Text + "',";
-                                                    SQl += "ｱｰﾑﾚｽﾄ = '"        + m_Combo[18].Text + "',";
-                                                    SQl += "QRG = '"       + m_Combo[19].Text + "',";
-                                                    SQl += "ISOFIX = '"        + m_Combo[20].Text + "',";
+                                                    SQl += "ﾗﾝﾊﾞｰ = '" + m_Combo[15].Text + "',";
+                                                    SQl += "背面ﾎﾟｹｯﾄ = '" + m_Combo[16].Text + "',";
+                                                    SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '" + m_Combo[17].Text + "',";
+                                                    SQl += "ｱｰﾑﾚｽﾄ = '" + m_Combo[18].Text + "',";
+                                                    SQl += "QRG = '" + m_Combo[19].Text + "',";
+                                                    SQl += "ISOFIX = '" + m_Combo[20].Text + "',";
                                                     SQl += "ﾊﾞｯｸﾎﾞｰﾄﾞ = '" + m_Combo[21].Text + "',";
-                                                    SQl += "ｵｯﾄﾏﾝ = '"         + m_Combo[22].Text + "',";
-                                                    SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '"      + m_Combo[40].Text + "',";
-                                                    SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '"     + m_Combo[41].Text + "',";
-                                                    SQl += "ﾛﾎﾞｯﾄ = '"         + m_Combo[44].Text + "',";
+                                                    SQl += "ｵｯﾄﾏﾝ = '" + m_Combo[22].Text + "',";
+                                                    SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '" + m_Combo[40].Text + "',";
+                                                    SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '" + m_Combo[41].Text + "',";
+                                                    SQl += "ﾛﾎﾞｯﾄ = '" + m_Combo[44].Text + "',";
                                                     break;
                                                 case 3: // ２ｎｄ側ｼｰﾄﾀｲﾌﾟ
                                                 case 4:
                                                 case 5:
-                                                    SQl += "ｼｰﾄﾀｲﾌﾟ = '"     + m_Combo[23].Text + "',";
-                                                    SQl += "AGﾀｲﾌﾟ = '"      + m_Combo[24].Text + "',";
-                                                    SQl += "ﾋｰﾀｰ = '"        + m_Combo[25].Text + "',";
-                                                    SQl += "ﾊﾞｯｸﾙ = '"       + m_Combo[26].Text + "',";
-                                                    SQl += "ﾍｯﾄﾞﾚｽﾄ = ' "    + m_Combo[27].Text + "',";
-                                                    SQl += "着座ｾﾝｻｰ = '"    + m_Combo[28].Text + "',";
-                                                    SQl += "空調 = '"        + m_Combo[29].Text + "',";
-                                                    SQl += "表皮材 = '"      + m_Combo[30].Text + "',";
+                                                    SQl += "ｼｰﾄﾀｲﾌﾟ = '" + m_Combo[23].Text + "',";
+                                                    SQl += "AGﾀｲﾌﾟ = '" + m_Combo[24].Text + "',";
+                                                    SQl += "ﾋｰﾀｰ = '" + m_Combo[25].Text + "',";
+                                                    SQl += "ﾊﾞｯｸﾙ = '" + m_Combo[26].Text + "',";
+                                                    SQl += "ﾍｯﾄﾞﾚｽﾄ = ' " + m_Combo[27].Text + "',";
+                                                    SQl += "着座ｾﾝｻｰ = '" + m_Combo[28].Text + "',";
+                                                    SQl += "空調 = '" + m_Combo[29].Text + "',";
+                                                    SQl += "表皮材 = '" + m_Combo[30].Text + "',";
                                                     SQl += "色 = '" + m_Combo[31].Text + "',";
-                                                    SQl += "ﾗﾝﾊﾞｰ = '"       + m_Combo[32].Text + "',";
-                                                    SQl += "背面ﾎﾟｹｯﾄ = '"    + m_Combo[33].Text + "',";
-                                                    SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '"   + m_Combo[34].Text + "',";
-                                                    SQl += "ｱｰﾑﾚｽﾄ = '"       + m_Combo[35].Text + "',";
+                                                    SQl += "ﾗﾝﾊﾞｰ = '" + m_Combo[32].Text + "',";
+                                                    SQl += "背面ﾎﾟｹｯﾄ = '" + m_Combo[33].Text + "',";
+                                                    SQl += "ﾌｯﾄｳｴﾙﾗﾝﾌﾟ = '" + m_Combo[34].Text + "',";
+                                                    SQl += "ｱｰﾑﾚｽﾄ = '" + m_Combo[35].Text + "',";
                                                     SQl += "QRG = '" + m_Combo[36].Text + "',";
-                                                    SQl += "ISOFIX = '"       + m_Combo[37].Text + "',";
+                                                    SQl += "ISOFIX = '" + m_Combo[37].Text + "',";
                                                     SQl += "ﾊﾞｯｸﾎﾞｰﾄﾞ = '" + m_Combo[38].Text + "',";
-                                                    SQl += "ｵｯﾄﾏﾝ = '"        + m_Combo[39].Text + "',";
-                                                    SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '"     + m_Combo[42].Text + "',";
-                                                    SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '"    + m_Combo[43].Text + "',";
-                                                    SQl += "ﾛﾎﾞｯﾄ = '"        + m_Combo[45].Text + "',";
+                                                    SQl += "ｵｯﾄﾏﾝ = '" + m_Combo[39].Text + "',";
+                                                    SQl += "ｺﾝﾋﾞﾆﾌｯｸ = '" + m_Combo[42].Text + "',";
+                                                    SQl += "ｻｲﾄﾞﾃｰﾌﾞﾙ = '" + m_Combo[43].Text + "',";
+                                                    SQl += "ﾛﾎﾞｯﾄ = '" + m_Combo[45].Text + "',";
                                                     break;
                                             }
 
-                                            switch (i) {
+                                            switch (i)
+                                            {
                                                 case 0:
                                                 case 3:
                                                     SP = " 1";
@@ -1217,28 +1265,29 @@ namespace X61GX42H1ST
                                             }
                                             SQl += "作業パターン = ' " + SP + "' ,";
 
-                                            SQl += "レシピ№ = '" + " " + m_c1FlexGrid1[i].GetData(j, 0 ) + "',"; // レシピ№
-                                            SQl += "ST0101 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 2 ) + "',"; // 1,作業回数
-                                            SQl += "ST0102 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 3 ) + "',"; // 2
-                                            SQl += "ST0103 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 4 ) + "',"; // 3
-                                            SQl += "ST0104 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 5 ) + "',"; // 4
-                                            SQl += "ST0105 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 6 ) + "',"; // 5
-                                            SQl += "ST0106 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 7 ) + "',"; // 6
-                                            SQl += "ST0107 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 8 ) + "',"; // 7
-                                            SQl += "ST0108 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 9 ) + "',"; // 8
-                                            SQl += "ST0109 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 10) + "',"; // 9
-                                            SQl += "ST0110 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 11) + "',"; // 10
-                                            SQl += "ST0111 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 12) + "',"; // 11
-                                            SQl += "ST0112 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 13) + "',"; // 12
-                                            SQl += "ST0113 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 14) + "',"; // 13
-                                            SQl += "ST0114 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 15) + "',"; // 14
-                                            SQl += "ST0115 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 16) + "',"; // 15
-                                            SQl += "ST0116 = '"   + " " + m_c1FlexGrid1[i].GetData(j, 17) + "' "; // 16
+                                            SQl += "レシピ№ = '" + " " + m_c1FlexGrid1[i].GetData(j, 0) + "',"; // レシピ№
+                                            SQl += "ST0101 = '" + " " + m_c1FlexGrid1[i].GetData(j, 2) + "',"; // 1,作業回数
+                                            SQl += "ST0102 = '" + " " + m_c1FlexGrid1[i].GetData(j, 3) + "',"; // 2
+                                            SQl += "ST0103 = '" + " " + m_c1FlexGrid1[i].GetData(j, 4) + "',"; // 3
+                                            SQl += "ST0104 = '" + " " + m_c1FlexGrid1[i].GetData(j, 5) + "',"; // 4
+                                            SQl += "ST0105 = '" + " " + m_c1FlexGrid1[i].GetData(j, 6) + "',"; // 5
+                                            SQl += "ST0106 = '" + " " + m_c1FlexGrid1[i].GetData(j, 7) + "',"; // 6
+                                            SQl += "ST0107 = '" + " " + m_c1FlexGrid1[i].GetData(j, 8) + "',"; // 7
+                                            SQl += "ST0108 = '" + " " + m_c1FlexGrid1[i].GetData(j, 9) + "',"; // 8
+                                            SQl += "ST0109 = '" + " " + m_c1FlexGrid1[i].GetData(j, 10) + "',"; // 9
+                                            SQl += "ST0110 = '" + " " + m_c1FlexGrid1[i].GetData(j, 11) + "',"; // 10
+                                            SQl += "ST0111 = '" + " " + m_c1FlexGrid1[i].GetData(j, 12) + "',"; // 11
+                                            SQl += "ST0112 = '" + " " + m_c1FlexGrid1[i].GetData(j, 13) + "',"; // 12
+                                            SQl += "ST0113 = '" + " " + m_c1FlexGrid1[i].GetData(j, 14) + "',"; // 13
+                                            SQl += "ST0114 = '" + " " + m_c1FlexGrid1[i].GetData(j, 15) + "',"; // 14
+                                            SQl += "ST0115 = '" + " " + m_c1FlexGrid1[i].GetData(j, 16) + "',"; // 15
+                                            SQl += "ST0116 = '" + " " + m_c1FlexGrid1[i].GetData(j, 17) + "' "; // 16
                                             SQl += "WHERE Trim(識別コード) = '" + m_Combo[0].Text + "'" + " AND " + "Trim(タブＧＰ) = '" + Conversion.Str(i).Trim() + "'" + " AND " + "Trim(レシピ№) = '" + m_c1FlexGrid1[i].GetData(j, 0) + "';";
                                         }
-                                        
+
                                         // 実行
-                                        using (OleDbCommand cmd1 = new OleDbCommand(SQl, DB)) {
+                                        using (OleDbCommand cmd1 = new OleDbCommand(SQl, DB))
+                                        {
                                             cmd1.ExecuteNonQuery();
                                         }
                                     }
@@ -1266,41 +1315,42 @@ namespace X61GX42H1ST
                 {
                     DB.Open(); // データベース接続
 
-                    SQl  = "select * from T_車種情報Ｍ ";
+                    SQl = "select * from T_車種情報Ｍ ";
                     SQl += "WHERE Trim(識別コード) = '" + m_Combo[0].SelectedItem + "' ";
 
                     using (OleDbCommand cmd = new OleDbCommand(SQl, DB))    // 検索条件をセット
                     {
                         using (OleDbDataReader RS = cmd.ExecuteReader())
                         {
-                            if (RS.HasRows != true) {
+                            if (RS.HasRows != true)
+                            {
                                 // 新規書込み
-                                SQl  = "INSERT INTO T_車種情報Ｍ ";
+                                SQl = "INSERT INTO T_車種情報Ｍ ";
                                 SQl += "(識別コード,治具タイプ,治具切出し順,1st治具ストック段,2nd治具ストック段,向先,1st側ｼｰﾄﾀｲﾌﾟ,2nd側ｼｰﾄﾀｲﾌﾟ) VALUES ";
                                 SQl += "(";
-                                SQl += "'" + m_Combo[0 ].Text + "',";
-                                SQl += "'" + m_Combo[1 ].Text + "',";
-                                SQl += "'" + m_Combo[2 ].Text + "',";
-                                SQl += "'" + m_Combo[3 ].Text + "',";
-                                SQl += "'" + m_Combo[4 ].Text + "',";
-                                SQl += "'" + m_Combo[5 ].Text + "',";
-                                SQl += "'" + m_Combo[6 ].Text + "',";
+                                SQl += "'" + m_Combo[0].Text + "',";
+                                SQl += "'" + m_Combo[1].Text + "',";
+                                SQl += "'" + m_Combo[2].Text + "',";
+                                SQl += "'" + m_Combo[3].Text + "',";
+                                SQl += "'" + m_Combo[4].Text + "',";
+                                SQl += "'" + m_Combo[5].Text + "',";
+                                SQl += "'" + m_Combo[6].Text + "',";
                                 SQl += "'" + m_Combo[23].Text + "'";
                                 SQl += ")";
                             }
                             else
                             {
                                 // 更新
-                                SQl  = "UPDATE T_車種情報Ｍ SET ";
-                                SQl += "識別コード = '"        + m_Combo[0 ].Text + "',";
-                                SQl += "治具タイプ = '"        + m_Combo[1 ].Text + "',";
-                                SQl += "治具切出し順 = '"      + m_Combo[2 ].Text + "',";
-                                SQl += "1st治具ストック段 = '" + m_Combo[3 ].Text + "',";
-                                SQl += "2nd治具ストック段 = '" + m_Combo[4 ].Text + "',";
-                                SQl += "向先 = '"              + m_Combo[5 ].Text + "',";
-                                SQl += "1st側ｼｰﾄﾀｲﾌﾟ = '"      + m_Combo[6 ].Text + "',";
-                                SQl += "2nd側ｼｰﾄﾀｲﾌﾟ = '"      + m_Combo[23].Text + "' ";
-                                SQl += "WHERE Trim(識別コード) = '"  + m_Combo[0 ].Text.Trim() + "';";
+                                SQl = "UPDATE T_車種情報Ｍ SET ";
+                                SQl += "識別コード = '" + m_Combo[0].Text + "',";
+                                SQl += "治具タイプ = '" + m_Combo[1].Text + "',";
+                                SQl += "治具切出し順 = '" + m_Combo[2].Text + "',";
+                                SQl += "1st治具ストック段 = '" + m_Combo[3].Text + "',";
+                                SQl += "2nd治具ストック段 = '" + m_Combo[4].Text + "',";
+                                SQl += "向先 = '" + m_Combo[5].Text + "',";
+                                SQl += "1st側ｼｰﾄﾀｲﾌﾟ = '" + m_Combo[6].Text + "',";
+                                SQl += "2nd側ｼｰﾄﾀｲﾌﾟ = '" + m_Combo[23].Text + "' ";
+                                SQl += "WHERE Trim(識別コード) = '" + m_Combo[0].Text.Trim() + "';";
                             }
 
                             // 実行
@@ -1351,8 +1401,8 @@ namespace X61GX42H1ST
 
             return 0;
         }
-        
-// [2025/06/24] p.hoi==================================================================>>
+
+        // [2025/06/24] p.hoi==================================================================>>
         private int SelectedTabIndex
         {
             get
@@ -1372,6 +1422,11 @@ namespace X61GX42H1ST
                 return (idx);
             }
         }
-//<<=====================================================================================
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+        //<<=====================================================================================
     }
 }

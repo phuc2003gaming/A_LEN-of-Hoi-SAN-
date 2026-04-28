@@ -763,20 +763,22 @@ namespace X61GX42H1ST
             Buckle,         // ﾊﾞｯｸﾙ
             Headrest,       // ﾍｯﾄﾞﾚｽﾄ
             SeatSen,        // 着座ｾﾝｻｰ
+            TorqueWrench,   // ﾄﾙｸﾚﾝﾁ (thiếu)
             AirCond,        // 空調
             Upholstery,     // 表皮材
-            TorqueWrench,   // ﾄﾙｸﾚﾝﾁ
             Lumbar,         // ﾗﾝﾊﾞｰ
             BackPock,       // 背面ﾎﾟｹｯﾄ
             FootwellLamp,   // ﾌｯﾄｳｴﾙﾗﾝﾌﾟ
-            ArmRest,        // ｱｰﾑﾚｽﾄ
+            ArmRest,        // ｱｰﾑﾚｽﾄ   (thiếu)
             QRG,            // QRG--new
             ISOFIX,         // ISOFIX--new
+            Backboard,      // ﾊﾞｯｸﾎﾞｰﾄﾞ--new
+            Ottoman,        // ｵｯﾄﾏﾝ-- new
             ConvHook,       // コンビニフック--new
             Site_Table,     // サイトデーブル--new
             Robot,          // ロボット--new
-            Backboard,      // ﾊﾞｯｸﾎﾟｰﾄ--new
-            Ottoman,        // ｵｯﾄﾏﾝ-- new
+           
+            
             count           // 数
         }
 //<<=====================================================================================

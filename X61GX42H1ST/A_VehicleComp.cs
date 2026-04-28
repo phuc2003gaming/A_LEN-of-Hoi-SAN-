@@ -58,15 +58,17 @@ namespace X61GX42H1ST
             };
 
             m_SrcLhdat = new Label[] {
-                LH_SRC_label7 , LH_SRC_label8 , LH_SRC_label9 , LH_SRC_label10, LH_SRC_label11,
-                LH_SRC_label12, LH_SRC_label13, LH_SRC_label14, LH_SRC_label15, LH_SRC_label16,
-                LH_SRC_label17, LH_SRC_label18, LH_SRC_label19, LH_SRC_label20, LH_SRC_label21, LH_SRC_label22, LH_SRC_label23, LH_SRC_label24
+                LH_RSC_label7 , LH_RSC_label8 , LH_RSC_label9 , LH_RSC_label10, LH_RSC_label11,
+                LH_RSC_label12, LH_RSC_label13, LH_RSC_label14, LH_RSC_label15, LH_RSC_label16,
+                LH_RSC_label17, LH_RSC_label18, LH_RSC_label19, LH_RSC_label20, LH_RSC_label21,
+                LH_RSC_label22, LH_RSC_label23, LH_RSC_label24,LH_RSC_label25,LH_RSC_label26
             };
 
             m_DstLhdat = new Label[] {
                 LH_DST_label7 , LH_DST_label8 , LH_DST_label9 , LH_DST_label10, LH_DST_label11,
                 LH_DST_label12, LH_DST_label13, LH_DST_label14, LH_DST_label15, LH_DST_label16,
-                LH_DST_label17, LH_DST_label18, LH_DST_label19, LH_DST_label20, LH_DST_label21, LH_DST_label22, LH_DST_label23, LH_DST_label24
+                LH_DST_label17, LH_DST_label18, LH_DST_label19, LH_DST_label20, LH_DST_label21,
+                LH_DST_label22, LH_DST_label23, LH_DST_label24,LH_DST_label25,LH_DST_label26
             };
 
             m_SrcRhHead = new Label[] {
@@ -77,15 +79,17 @@ namespace X61GX42H1ST
             };
 
             m_SrcRhdat = new Label[] {
-                RH_SRC_label7 , RH_SRC_label8 , RH_SRC_label9 , RH_SRC_label10, RH_SRC_label11,
-                RH_SRC_label12, RH_SRC_label13, RH_SRC_label14, RH_SRC_label15, RH_SRC_label16,
-                RH_SRC_label17, RH_SRC_label18, RH_SRC_label19, RH_SRC_label20, RH_SRC_label21,RH_SRC_label22,RH_SRC_label23, RH_SRC_label24
+                RH_RSC_label7 , RH_RSC_label8 , RH_RSC_label9 , RH_RSC_label10, RH_RSC_label11,
+                RH_RSC_label12, RH_RSC_label13, RH_RSC_label14, RH_RSC_label15, RH_RSC_label16,
+                RH_RSC_label17, RH_RSC_label18, RH_RSC_label19, RH_RSC_label20, RH_RSC_label21,
+                RH_RSC_label22,RH_RSC_label23, RH_RSC_label24,RH_RSC_label25,RH_RSC_label26
             };
 
             m_DstRhdat = new Label[] {
                 RH_DST_label7 , RH_DST_label8 , RH_DST_label9 , RH_DST_label10, RH_DST_label11,
                 RH_DST_label12, RH_DST_label13, RH_DST_label14, RH_DST_label15, RH_DST_label16,
-                RH_DST_label17, RH_DST_label18, RH_DST_label19, RH_DST_label20, RH_DST_label21, RH_DST_label22, RH_DST_label23, RH_DST_label24
+                RH_DST_label17, RH_DST_label18, RH_DST_label19, RH_DST_label20, RH_DST_label21, 
+                RH_DST_label22, RH_DST_label23, RH_DST_label24,RH_DST_label25,RH_DST_label26
             };
 
         }
@@ -192,8 +196,7 @@ namespace X61GX42H1ST
                     m_SrcLhdat[17].Text = Danpre_Xls_sub.GetMasterStr(Danpre_Xls_sub.M_ID.Ottoman, m_VehicleComp.SrcDat[m_Index].LhDat.Ottoman);
                     m_SrcLhdat[18].Text = Danpre_Xls_sub.GetMasterStr(Danpre_Xls_sub.M_ID.SeatSen, m_VehicleComp.SrcDat[m_Index].LhDat.SeatSen);
                     m_SrcLhdat[19].Text = Danpre_Xls_sub.GetMasterStr(Danpre_Xls_sub.M_ID.AirCond, m_VehicleComp.SrcDat[m_Index].LhDat.AirCond);
-
-
+                    
                     // レシピ部
                     cnt = 0;
                     for (int stno = 1; stno <= 16; stno++)

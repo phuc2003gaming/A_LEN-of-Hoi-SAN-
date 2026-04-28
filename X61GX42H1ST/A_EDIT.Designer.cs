@@ -175,7 +175,7 @@ namespace X61GX42H1ST
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1675, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1677, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -185,7 +185,7 @@ namespace X61GX42H1ST
             this.保存ToolStripMenuItem,
             this.終了ToolStripMenuItem});
             this.File_Command.Name = "File_Command";
-            this.File_Command.Size = new System.Drawing.Size(79, 30);
+            this.File_Command.Size = new System.Drawing.Size(79, 29);
             this.File_Command.Text = "ファイル";
             this.File_Command.Click += new System.EventHandler(this.File_Command_Click);
             // 
@@ -213,7 +213,7 @@ namespace X61GX42H1ST
             this.ｌ側パターン２をＲ側パターン２に展開ToolStripMenuItem,
             this.ｌ側パターン３をＲ側パターン３に展開ToolStripMenuItem});
             this.Edit_Command.Name = "Edit_Command";
-            this.Edit_Command.Size = new System.Drawing.Size(64, 30);
+            this.Edit_Command.Size = new System.Drawing.Size(64, 29);
             this.Edit_Command.Text = "編集";
             this.Edit_Command.Click += new System.EventHandler(this.Edit_Command_Click);
             // 
@@ -272,7 +272,7 @@ namespace X61GX42H1ST
             this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1640, 542);
+            this.tabControl1.Size = new System.Drawing.Size(1651, 542);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -282,7 +282,7 @@ namespace X61GX42H1ST
             this.tabPage1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage1.Size = new System.Drawing.Size(1643, 506);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ＬＨ作業パターン１";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -297,7 +297,7 @@ namespace X61GX42H1ST
             this.c1FlexGrid1_0.Name = "c1FlexGrid1_0";
             this.c1FlexGrid1_0.Rows.Count = 100;
             this.c1FlexGrid1_0.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
-            this.c1FlexGrid1_0.Size = new System.Drawing.Size(1631, 502);
+            this.c1FlexGrid1_0.Size = new System.Drawing.Size(1640, 502);
             this.c1FlexGrid1_0.TabIndex = 0;
             this.c1FlexGrid1_0.DoubleClick += new System.EventHandler(this.c1FlexGrid1_DoubleClick);
             // 
@@ -308,7 +308,7 @@ namespace X61GX42H1ST
             this.tabPage2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage2.Size = new System.Drawing.Size(1643, 506);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ＲＨ作業パターン１";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -336,7 +336,7 @@ namespace X61GX42H1ST
             this.tabPage3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage3.Size = new System.Drawing.Size(1643, 506);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ＬＨ作業パターン２";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -364,7 +364,7 @@ namespace X61GX42H1ST
             this.tabPage4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage4.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage4.Size = new System.Drawing.Size(1643, 506);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "ＲＨ作業パターン２";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -392,7 +392,7 @@ namespace X61GX42H1ST
             this.tabPage5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage5.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage5.Size = new System.Drawing.Size(1643, 506);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ＬＨ作業パターン３";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -420,7 +420,7 @@ namespace X61GX42H1ST
             this.tabPage6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tabPage6.Size = new System.Drawing.Size(1632, 506);
+            this.tabPage6.Size = new System.Drawing.Size(1643, 506);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ＲＨ作業パターン３";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -446,10 +446,10 @@ namespace X61GX42H1ST
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.Location = new System.Drawing.Point(25, 38);
+            this.label1.Location = new System.Drawing.Point(24, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 24);
+            this.label1.Size = new System.Drawing.Size(128, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "識別コード";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -459,10 +459,10 @@ namespace X61GX42H1ST
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(192, 38);
+            this.label2.Location = new System.Drawing.Point(168, 38);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 24);
+            this.label2.Size = new System.Drawing.Size(208, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "治具タイプ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -472,10 +472,10 @@ namespace X61GX42H1ST
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(383, 38);
+            this.label3.Location = new System.Drawing.Point(392, 38);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 24);
+            this.label3.Size = new System.Drawing.Size(160, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "治具切出し順";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -485,10 +485,10 @@ namespace X61GX42H1ST
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(583, 38);
+            this.label4.Location = new System.Drawing.Point(568, 38);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 24);
+            this.label4.Size = new System.Drawing.Size(160, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "LH治具ｽﾄｯｸ段";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -498,10 +498,10 @@ namespace X61GX42H1ST
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(1050, 38);
+            this.label5.Location = new System.Drawing.Point(920, 38);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 24);
+            this.label5.Size = new System.Drawing.Size(152, 24);
             this.label5.TabIndex = 6;
             this.label5.Text = "向　先";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -511,10 +511,10 @@ namespace X61GX42H1ST
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label6.Location = new System.Drawing.Point(1208, 38);
+            this.label6.Location = new System.Drawing.Point(1088, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(215, 24);
+            this.label6.Size = new System.Drawing.Size(248, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "LH側ｼｰﾄﾀｲﾌﾟ";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -524,10 +524,10 @@ namespace X61GX42H1ST
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(1433, 38);
+            this.label7.Location = new System.Drawing.Point(1352, 38);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 24);
+            this.label7.Size = new System.Drawing.Size(244, 24);
             this.label7.TabIndex = 8;
             this.label7.Text = "RH側ｼｰﾄﾀｲﾌﾟ";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -536,10 +536,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_0.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_0.FormattingEnabled = true;
-            this.comboBox1_0.Location = new System.Drawing.Point(25, 68);
+            this.comboBox1_0.Location = new System.Drawing.Point(24, 68);
             this.comboBox1_0.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_0.Name = "comboBox1_0";
-            this.comboBox1_0.Size = new System.Drawing.Size(156, 30);
+            this.comboBox1_0.Size = new System.Drawing.Size(128, 30);
             this.comboBox1_0.TabIndex = 9;
             this.comboBox1_0.Tag = "「識別コード」";
             this.comboBox1_0.SelectedValueChanged += new System.EventHandler(this.comboBox1_0_SelectedValueChanged);
@@ -548,10 +548,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_1.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_1.FormattingEnabled = true;
-            this.comboBox1_1.Location = new System.Drawing.Point(192, 68);
+            this.comboBox1_1.Location = new System.Drawing.Point(168, 68);
             this.comboBox1_1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_1.Name = "comboBox1_1";
-            this.comboBox1_1.Size = new System.Drawing.Size(181, 30);
+            this.comboBox1_1.Size = new System.Drawing.Size(208, 30);
             this.comboBox1_1.TabIndex = 10;
             this.comboBox1_1.Tag = "「治具タイプ」";
             // 
@@ -559,10 +559,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_2.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_2.FormattingEnabled = true;
-            this.comboBox1_2.Location = new System.Drawing.Point(383, 68);
+            this.comboBox1_2.Location = new System.Drawing.Point(392, 68);
             this.comboBox1_2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_2.Name = "comboBox1_2";
-            this.comboBox1_2.Size = new System.Drawing.Size(189, 30);
+            this.comboBox1_2.Size = new System.Drawing.Size(160, 30);
             this.comboBox1_2.TabIndex = 11;
             this.comboBox1_2.Tag = "「治具切出し順」";
             // 
@@ -570,10 +570,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_3.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_3.FormattingEnabled = true;
-            this.comboBox1_3.Location = new System.Drawing.Point(583, 68);
+            this.comboBox1_3.Location = new System.Drawing.Point(568, 68);
             this.comboBox1_3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_3.Name = "comboBox1_3";
-            this.comboBox1_3.Size = new System.Drawing.Size(222, 30);
+            this.comboBox1_3.Size = new System.Drawing.Size(160, 30);
             this.comboBox1_3.TabIndex = 12;
             this.comboBox1_3.Tag = "「LH治具ｽﾄｯｸ段」";
             // 
@@ -581,10 +581,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_5.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_5.FormattingEnabled = true;
-            this.comboBox1_5.Location = new System.Drawing.Point(1050, 68);
+            this.comboBox1_5.Location = new System.Drawing.Point(920, 68);
             this.comboBox1_5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_5.Name = "comboBox1_5";
-            this.comboBox1_5.Size = new System.Drawing.Size(147, 30);
+            this.comboBox1_5.Size = new System.Drawing.Size(152, 30);
             this.comboBox1_5.TabIndex = 13;
             this.comboBox1_5.Tag = "「向先」";
             // 
@@ -592,10 +592,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_6.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_6.FormattingEnabled = true;
-            this.comboBox1_6.Location = new System.Drawing.Point(1208, 68);
+            this.comboBox1_6.Location = new System.Drawing.Point(1088, 68);
             this.comboBox1_6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_6.Name = "comboBox1_6";
-            this.comboBox1_6.Size = new System.Drawing.Size(214, 26);
+            this.comboBox1_6.Size = new System.Drawing.Size(248, 26);
             this.comboBox1_6.TabIndex = 14;
             this.comboBox1_6.Tag = "「LH側ｼｰﾄﾀｲﾌﾟ」";
             // 
@@ -603,10 +603,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_23.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_23.FormattingEnabled = true;
-            this.comboBox1_23.Location = new System.Drawing.Point(1433, 68);
+            this.comboBox1_23.Location = new System.Drawing.Point(1352, 68);
             this.comboBox1_23.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_23.Name = "comboBox1_23";
-            this.comboBox1_23.Size = new System.Drawing.Size(214, 26);
+            this.comboBox1_23.Size = new System.Drawing.Size(244, 26);
             this.comboBox1_23.TabIndex = 15;
             this.comboBox1_23.Tag = "「RH側ｼｰﾄﾀｲﾌﾟ」";
             // 
@@ -638,10 +638,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_4.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_4.FormattingEnabled = true;
-            this.comboBox1_4.Location = new System.Drawing.Point(817, 68);
+            this.comboBox1_4.Location = new System.Drawing.Point(744, 68);
             this.comboBox1_4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_4.Name = "comboBox1_4";
-            this.comboBox1_4.Size = new System.Drawing.Size(222, 30);
+            this.comboBox1_4.Size = new System.Drawing.Size(160, 30);
             this.comboBox1_4.TabIndex = 55;
             this.comboBox1_4.Tag = "「RH治具ｽﾄｯｸ段」";
             // 
@@ -650,10 +650,10 @@ namespace X61GX42H1ST
             this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label28.Font = new System.Drawing.Font("MS PGothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label28.Location = new System.Drawing.Point(817, 38);
+            this.label28.Location = new System.Drawing.Point(744, 38);
             this.label28.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(224, 24);
+            this.label28.Size = new System.Drawing.Size(160, 24);
             this.label28.TabIndex = 54;
             this.label28.Text = "RH治具ｽﾄｯｸ段";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -662,10 +662,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_20.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_20.FormattingEnabled = true;
-            this.comboBox1_20.Location = new System.Drawing.Point(1537, 214);
+            this.comboBox1_20.Location = new System.Drawing.Point(1584, 224);
             this.comboBox1_20.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_20.Name = "comboBox1_20";
-            this.comboBox1_20.Size = new System.Drawing.Size(131, 26);
+            this.comboBox1_20.Size = new System.Drawing.Size(30, 26);
             this.comboBox1_20.TabIndex = 190;
             this.comboBox1_20.Visible = false;
             // 
@@ -674,10 +674,10 @@ namespace X61GX42H1ST
             this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label48.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label48.Location = new System.Drawing.Point(1537, 182);
+            this.label48.Location = new System.Drawing.Point(1584, 192);
             this.label48.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(132, 24);
+            this.label48.Size = new System.Drawing.Size(30, 26);
             this.label48.TabIndex = 189;
             this.label48.Text = "ISOFIX";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -687,10 +687,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_18.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_18.FormattingEnabled = true;
-            this.comboBox1_18.Location = new System.Drawing.Point(1537, 152);
+            this.comboBox1_18.Location = new System.Drawing.Point(1552, 224);
             this.comboBox1_18.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_18.Name = "comboBox1_18";
-            this.comboBox1_18.Size = new System.Drawing.Size(131, 26);
+            this.comboBox1_18.Size = new System.Drawing.Size(30, 26);
             this.comboBox1_18.TabIndex = 188;
             this.comboBox1_18.Visible = false;
             // 
@@ -699,10 +699,10 @@ namespace X61GX42H1ST
             this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label47.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label47.Location = new System.Drawing.Point(1537, 120);
+            this.label47.Location = new System.Drawing.Point(1552, 192);
             this.label47.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(132, 24);
+            this.label47.Size = new System.Drawing.Size(30, 26);
             this.label47.TabIndex = 187;
             this.label47.Text = "ｱｰﾑﾚｽﾄ";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -712,10 +712,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_37.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_37.FormattingEnabled = true;
-            this.comboBox1_37.Location = new System.Drawing.Point(1537, 374);
+            this.comboBox1_37.Location = new System.Drawing.Point(1584, 376);
             this.comboBox1_37.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_37.Name = "comboBox1_37";
-            this.comboBox1_37.Size = new System.Drawing.Size(132, 26);
+            this.comboBox1_37.Size = new System.Drawing.Size(30, 26);
             this.comboBox1_37.TabIndex = 186;
             // 
             // label45
@@ -723,10 +723,10 @@ namespace X61GX42H1ST
             this.label45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label45.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label45.Location = new System.Drawing.Point(1537, 342);
+            this.label45.Location = new System.Drawing.Point(1584, 344);
             this.label45.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(132, 24);
+            this.label45.Size = new System.Drawing.Size(30, 26);
             this.label45.TabIndex = 185;
             this.label45.Text = "ISOFIX";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -735,10 +735,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_35.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_35.FormattingEnabled = true;
-            this.comboBox1_35.Location = new System.Drawing.Point(1537, 312);
+            this.comboBox1_35.Location = new System.Drawing.Point(1552, 376);
             this.comboBox1_35.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_35.Name = "comboBox1_35";
-            this.comboBox1_35.Size = new System.Drawing.Size(131, 26);
+            this.comboBox1_35.Size = new System.Drawing.Size(30, 26);
             this.comboBox1_35.TabIndex = 184;
             // 
             // label46
@@ -746,10 +746,10 @@ namespace X61GX42H1ST
             this.label46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label46.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label46.Location = new System.Drawing.Point(1537, 280);
+            this.label46.Location = new System.Drawing.Point(1552, 344);
             this.label46.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(132, 24);
+            this.label46.Size = new System.Drawing.Size(30, 26);
             this.label46.TabIndex = 183;
             this.label46.Text = "ｱｰﾑﾚｽﾄ";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -758,10 +758,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_39.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_39.FormattingEnabled = true;
-            this.comboBox1_39.Location = new System.Drawing.Point(552, 384);
+            this.comboBox1_39.Location = new System.Drawing.Point(624, 374);
             this.comboBox1_39.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_39.Name = "comboBox1_39";
-            this.comboBox1_39.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_39.Size = new System.Drawing.Size(120, 26);
             this.comboBox1_39.TabIndex = 182;
             // 
             // label18
@@ -769,10 +769,10 @@ namespace X61GX42H1ST
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label18.Location = new System.Drawing.Point(552, 352);
+            this.label18.Location = new System.Drawing.Point(624, 342);
             this.label18.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(139, 24);
+            this.label18.Size = new System.Drawing.Size(120, 26);
             this.label18.TabIndex = 181;
             this.label18.Text = "オットマン";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -781,10 +781,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_36.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_36.FormattingEnabled = true;
-            this.comboBox1_36.Location = new System.Drawing.Point(1312, 384);
+            this.comboBox1_36.Location = new System.Drawing.Point(1432, 374);
             this.comboBox1_36.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_36.Name = "comboBox1_36";
-            this.comboBox1_36.Size = new System.Drawing.Size(94, 26);
+            this.comboBox1_36.Size = new System.Drawing.Size(112, 26);
             this.comboBox1_36.TabIndex = 180;
             // 
             // label19
@@ -792,10 +792,10 @@ namespace X61GX42H1ST
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label19.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label19.Location = new System.Drawing.Point(1312, 353);
+            this.label19.Location = new System.Drawing.Point(1432, 343);
             this.label19.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(94, 24);
+            this.label19.Size = new System.Drawing.Size(112, 26);
             this.label19.TabIndex = 179;
             this.label19.Text = "QRG";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -804,10 +804,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_38.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_38.FormattingEnabled = true;
-            this.comboBox1_38.Location = new System.Drawing.Point(1158, 384);
+            this.comboBox1_38.Location = new System.Drawing.Point(1256, 374);
             this.comboBox1_38.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_38.Name = "comboBox1_38";
-            this.comboBox1_38.Size = new System.Drawing.Size(150, 26);
+            this.comboBox1_38.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_38.TabIndex = 178;
             // 
             // label20
@@ -815,10 +815,10 @@ namespace X61GX42H1ST
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label20.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label20.Location = new System.Drawing.Point(1158, 353);
+            this.label20.Location = new System.Drawing.Point(1256, 343);
             this.label20.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(150, 24);
+            this.label20.Size = new System.Drawing.Size(168, 26);
             this.label20.TabIndex = 177;
             this.label20.Text = "バックポード";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -827,10 +827,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_45.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_45.FormattingEnabled = true;
-            this.comboBox1_45.Location = new System.Drawing.Point(979, 383);
+            this.comboBox1_45.Location = new System.Drawing.Point(1080, 373);
             this.comboBox1_45.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_45.Name = "comboBox1_45";
-            this.comboBox1_45.Size = new System.Drawing.Size(175, 26);
+            this.comboBox1_45.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_45.TabIndex = 176;
             // 
             // label21
@@ -838,10 +838,10 @@ namespace X61GX42H1ST
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label21.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label21.Location = new System.Drawing.Point(979, 352);
+            this.label21.Location = new System.Drawing.Point(1080, 342);
             this.label21.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(175, 24);
+            this.label21.Size = new System.Drawing.Size(168, 26);
             this.label21.TabIndex = 175;
             this.label21.Text = "ロボット";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -850,10 +850,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_43.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_43.FormattingEnabled = true;
-            this.comboBox1_43.Location = new System.Drawing.Point(838, 383);
+            this.comboBox1_43.Location = new System.Drawing.Point(912, 373);
             this.comboBox1_43.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_43.Name = "comboBox1_43";
-            this.comboBox1_43.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_43.Size = new System.Drawing.Size(160, 26);
             this.comboBox1_43.TabIndex = 174;
             // 
             // label22
@@ -861,10 +861,10 @@ namespace X61GX42H1ST
             this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label22.Location = new System.Drawing.Point(838, 352);
+            this.label22.Location = new System.Drawing.Point(912, 342);
             this.label22.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(139, 24);
+            this.label22.Size = new System.Drawing.Size(160, 26);
             this.label22.TabIndex = 173;
             this.label22.Text = "サイトデーブル";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -873,10 +873,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_42.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_42.FormattingEnabled = true;
-            this.comboBox1_42.Location = new System.Drawing.Point(696, 383);
+            this.comboBox1_42.Location = new System.Drawing.Point(752, 373);
             this.comboBox1_42.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_42.Name = "comboBox1_42";
-            this.comboBox1_42.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_42.Size = new System.Drawing.Size(152, 26);
             this.comboBox1_42.TabIndex = 172;
             // 
             // label23
@@ -884,10 +884,10 @@ namespace X61GX42H1ST
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label23.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label23.Location = new System.Drawing.Point(696, 352);
+            this.label23.Location = new System.Drawing.Point(752, 342);
             this.label23.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(139, 24);
+            this.label23.Size = new System.Drawing.Size(152, 26);
             this.label23.TabIndex = 171;
             this.label23.Text = "コンビニフック";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -896,10 +896,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_34.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_34.FormattingEnabled = true;
-            this.comboBox1_34.Location = new System.Drawing.Point(429, 383);
+            this.comboBox1_34.Location = new System.Drawing.Point(448, 373);
             this.comboBox1_34.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_34.Name = "comboBox1_34";
-            this.comboBox1_34.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1_34.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_34.TabIndex = 170;
             // 
             // label24
@@ -907,10 +907,10 @@ namespace X61GX42H1ST
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label24.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label24.Location = new System.Drawing.Point(429, 352);
+            this.label24.Location = new System.Drawing.Point(448, 342);
             this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(121, 24);
+            this.label24.Size = new System.Drawing.Size(168, 26);
             this.label24.TabIndex = 169;
             this.label24.Text = "フットウイルランプ";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -919,10 +919,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_33.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_33.FormattingEnabled = true;
-            this.comboBox1_33.Location = new System.Drawing.Point(229, 383);
+            this.comboBox1_33.Location = new System.Drawing.Point(248, 373);
             this.comboBox1_33.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_33.Name = "comboBox1_33";
-            this.comboBox1_33.Size = new System.Drawing.Size(199, 26);
+            this.comboBox1_33.Size = new System.Drawing.Size(192, 26);
             this.comboBox1_33.TabIndex = 168;
             // 
             // label25
@@ -930,10 +930,10 @@ namespace X61GX42H1ST
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label25.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label25.Location = new System.Drawing.Point(229, 352);
+            this.label25.Location = new System.Drawing.Point(248, 342);
             this.label25.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(199, 24);
+            this.label25.Size = new System.Drawing.Size(192, 26);
             this.label25.TabIndex = 167;
             this.label25.Text = "背面ポケット";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -942,10 +942,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_32.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_32.FormattingEnabled = true;
-            this.comboBox1_32.Location = new System.Drawing.Point(73, 382);
+            this.comboBox1_32.Location = new System.Drawing.Point(105, 372);
             this.comboBox1_32.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_32.Name = "comboBox1_32";
-            this.comboBox1_32.Size = new System.Drawing.Size(154, 26);
+            this.comboBox1_32.Size = new System.Drawing.Size(135, 26);
             this.comboBox1_32.TabIndex = 166;
             // 
             // label26
@@ -953,10 +953,10 @@ namespace X61GX42H1ST
             this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label26.Location = new System.Drawing.Point(73, 352);
+            this.label26.Location = new System.Drawing.Point(105, 342);
             this.label26.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(154, 24);
+            this.label26.Size = new System.Drawing.Size(135, 26);
             this.label26.TabIndex = 165;
             this.label26.Text = "ランベー";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -965,10 +965,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_31.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_31.FormattingEnabled = true;
-            this.comboBox1_31.Location = new System.Drawing.Point(1245, 312);
+            this.comboBox1_31.Location = new System.Drawing.Point(1376, 302);
             this.comboBox1_31.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_31.Name = "comboBox1_31";
-            this.comboBox1_31.Size = new System.Drawing.Size(144, 26);
+            this.comboBox1_31.Size = new System.Drawing.Size(208, 26);
             this.comboBox1_31.TabIndex = 164;
             // 
             // label37
@@ -976,10 +976,10 @@ namespace X61GX42H1ST
             this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label37.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label37.Location = new System.Drawing.Point(1245, 280);
+            this.label37.Location = new System.Drawing.Point(1376, 270);
             this.label37.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(145, 24);
+            this.label37.Size = new System.Drawing.Size(208, 26);
             this.label37.TabIndex = 163;
             this.label37.Text = "ﾄﾙｸﾚﾝﾁ";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -988,10 +988,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_30.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_30.FormattingEnabled = true;
-            this.comboBox1_30.Location = new System.Drawing.Point(1112, 312);
+            this.comboBox1_30.Location = new System.Drawing.Point(1160, 302);
             this.comboBox1_30.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_30.Name = "comboBox1_30";
-            this.comboBox1_30.Size = new System.Drawing.Size(131, 26);
+            this.comboBox1_30.Size = new System.Drawing.Size(208, 26);
             this.comboBox1_30.TabIndex = 162;
             // 
             // label38
@@ -999,10 +999,10 @@ namespace X61GX42H1ST
             this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label38.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label38.Location = new System.Drawing.Point(1112, 280);
+            this.label38.Location = new System.Drawing.Point(1160, 270);
             this.label38.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(131, 24);
+            this.label38.Size = new System.Drawing.Size(208, 26);
             this.label38.TabIndex = 161;
             this.label38.Text = "表皮材";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1011,10 +1011,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_29.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_29.FormattingEnabled = true;
-            this.comboBox1_29.Location = new System.Drawing.Point(990, 312);
+            this.comboBox1_29.Location = new System.Drawing.Point(1056, 302);
             this.comboBox1_29.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_29.Name = "comboBox1_29";
-            this.comboBox1_29.Size = new System.Drawing.Size(117, 26);
+            this.comboBox1_29.Size = new System.Drawing.Size(96, 26);
             this.comboBox1_29.TabIndex = 160;
             // 
             // label39
@@ -1022,10 +1022,10 @@ namespace X61GX42H1ST
             this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label39.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label39.Location = new System.Drawing.Point(990, 280);
+            this.label39.Location = new System.Drawing.Point(1056, 270);
             this.label39.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(119, 24);
+            this.label39.Size = new System.Drawing.Size(96, 26);
             this.label39.TabIndex = 159;
             this.label39.Text = "空調";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1034,10 +1034,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_28.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_28.FormattingEnabled = true;
-            this.comboBox1_28.Location = new System.Drawing.Point(808, 312);
+            this.comboBox1_28.Location = new System.Drawing.Point(888, 302);
             this.comboBox1_28.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_28.Name = "comboBox1_28";
-            this.comboBox1_28.Size = new System.Drawing.Size(181, 26);
+            this.comboBox1_28.Size = new System.Drawing.Size(160, 26);
             this.comboBox1_28.TabIndex = 158;
             // 
             // label40
@@ -1045,10 +1045,10 @@ namespace X61GX42H1ST
             this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label40.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label40.Location = new System.Drawing.Point(808, 280);
+            this.label40.Location = new System.Drawing.Point(888, 270);
             this.label40.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(181, 24);
+            this.label40.Size = new System.Drawing.Size(160, 26);
             this.label40.TabIndex = 157;
             this.label40.Text = "着産センター";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1057,10 +1057,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_27.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_27.FormattingEnabled = true;
-            this.comboBox1_27.Location = new System.Drawing.Point(536, 312);
+            this.comboBox1_27.Location = new System.Drawing.Point(592, 302);
             this.comboBox1_27.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_27.Name = "comboBox1_27";
-            this.comboBox1_27.Size = new System.Drawing.Size(271, 26);
+            this.comboBox1_27.Size = new System.Drawing.Size(288, 26);
             this.comboBox1_27.TabIndex = 156;
             // 
             // label41
@@ -1068,10 +1068,10 @@ namespace X61GX42H1ST
             this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label41.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label41.Location = new System.Drawing.Point(536, 280);
+            this.label41.Location = new System.Drawing.Point(592, 270);
             this.label41.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(271, 24);
+            this.label41.Size = new System.Drawing.Size(288, 26);
             this.label41.TabIndex = 155;
             this.label41.Text = "ﾍｯﾄﾞﾚｽﾄ";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1080,10 +1080,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_26.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_26.FormattingEnabled = true;
-            this.comboBox1_26.Location = new System.Drawing.Point(365, 312);
+            this.comboBox1_26.Location = new System.Drawing.Point(376, 302);
             this.comboBox1_26.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_26.Name = "comboBox1_26";
-            this.comboBox1_26.Size = new System.Drawing.Size(169, 26);
+            this.comboBox1_26.Size = new System.Drawing.Size(208, 26);
             this.comboBox1_26.TabIndex = 154;
             // 
             // label42
@@ -1091,10 +1091,10 @@ namespace X61GX42H1ST
             this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label42.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label42.Location = new System.Drawing.Point(365, 280);
+            this.label42.Location = new System.Drawing.Point(376, 270);
             this.label42.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(169, 24);
+            this.label42.Size = new System.Drawing.Size(208, 26);
             this.label42.TabIndex = 153;
             this.label42.Text = "ベックル";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1103,10 +1103,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_25.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_25.FormattingEnabled = true;
-            this.comboBox1_25.Location = new System.Drawing.Point(249, 312);
+            this.comboBox1_25.Location = new System.Drawing.Point(272, 302);
             this.comboBox1_25.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_25.Name = "comboBox1_25";
-            this.comboBox1_25.Size = new System.Drawing.Size(115, 26);
+            this.comboBox1_25.Size = new System.Drawing.Size(96, 26);
             this.comboBox1_25.TabIndex = 152;
             // 
             // label43
@@ -1114,10 +1114,10 @@ namespace X61GX42H1ST
             this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label43.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label43.Location = new System.Drawing.Point(249, 280);
+            this.label43.Location = new System.Drawing.Point(272, 270);
             this.label43.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(115, 24);
+            this.label43.Size = new System.Drawing.Size(96, 26);
             this.label43.TabIndex = 151;
             this.label43.Text = "ヒーター";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1126,10 +1126,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_24.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_24.FormattingEnabled = true;
-            this.comboBox1_24.Location = new System.Drawing.Point(73, 312);
+            this.comboBox1_24.Location = new System.Drawing.Point(105, 302);
             this.comboBox1_24.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_24.Name = "comboBox1_24";
-            this.comboBox1_24.Size = new System.Drawing.Size(175, 26);
+            this.comboBox1_24.Size = new System.Drawing.Size(159, 26);
             this.comboBox1_24.TabIndex = 150;
             // 
             // label44
@@ -1137,10 +1137,10 @@ namespace X61GX42H1ST
             this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label44.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label44.Location = new System.Drawing.Point(73, 280);
+            this.label44.Location = new System.Drawing.Point(105, 270);
             this.label44.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(175, 24);
+            this.label44.Size = new System.Drawing.Size(159, 26);
             this.label44.TabIndex = 149;
             this.label44.Text = "AGタイプ";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1149,10 +1149,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_22.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_22.FormattingEnabled = true;
-            this.comboBox1_22.Location = new System.Drawing.Point(552, 224);
+            this.comboBox1_22.Location = new System.Drawing.Point(632, 224);
             this.comboBox1_22.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_22.Name = "comboBox1_22";
-            this.comboBox1_22.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_22.Size = new System.Drawing.Size(112, 26);
             this.comboBox1_22.TabIndex = 148;
             // 
             // label36
@@ -1160,10 +1160,10 @@ namespace X61GX42H1ST
             this.label36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label36.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label36.Location = new System.Drawing.Point(552, 192);
+            this.label36.Location = new System.Drawing.Point(632, 192);
             this.label36.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(139, 24);
+            this.label36.Size = new System.Drawing.Size(112, 26);
             this.label36.TabIndex = 147;
             this.label36.Text = "オットマン";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1172,10 +1172,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_19.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_19.FormattingEnabled = true;
-            this.comboBox1_19.Location = new System.Drawing.Point(1304, 224);
+            this.comboBox1_19.Location = new System.Drawing.Point(1432, 224);
             this.comboBox1_19.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_19.Name = "comboBox1_19";
-            this.comboBox1_19.Size = new System.Drawing.Size(94, 26);
+            this.comboBox1_19.Size = new System.Drawing.Size(112, 26);
             this.comboBox1_19.TabIndex = 146;
             // 
             // label29
@@ -1183,10 +1183,10 @@ namespace X61GX42H1ST
             this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label29.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label29.Location = new System.Drawing.Point(1304, 192);
+            this.label29.Location = new System.Drawing.Point(1432, 192);
             this.label29.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(94, 24);
+            this.label29.Size = new System.Drawing.Size(112, 26);
             this.label29.TabIndex = 145;
             this.label29.Text = "QRG";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1195,10 +1195,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_21.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_21.FormattingEnabled = true;
-            this.comboBox1_21.Location = new System.Drawing.Point(1152, 224);
+            this.comboBox1_21.Location = new System.Drawing.Point(1256, 224);
             this.comboBox1_21.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_21.Name = "comboBox1_21";
-            this.comboBox1_21.Size = new System.Drawing.Size(150, 26);
+            this.comboBox1_21.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_21.TabIndex = 144;
             // 
             // label30
@@ -1206,10 +1206,10 @@ namespace X61GX42H1ST
             this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label30.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label30.Location = new System.Drawing.Point(1152, 192);
+            this.label30.Location = new System.Drawing.Point(1256, 192);
             this.label30.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(150, 24);
+            this.label30.Size = new System.Drawing.Size(168, 26);
             this.label30.TabIndex = 143;
             this.label30.Text = "バックポード";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1218,10 +1218,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_44.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_44.FormattingEnabled = true;
-            this.comboBox1_44.Location = new System.Drawing.Point(972, 224);
+            this.comboBox1_44.Location = new System.Drawing.Point(1080, 224);
             this.comboBox1_44.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_44.Name = "comboBox1_44";
-            this.comboBox1_44.Size = new System.Drawing.Size(175, 26);
+            this.comboBox1_44.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_44.TabIndex = 142;
             // 
             // label31
@@ -1229,10 +1229,10 @@ namespace X61GX42H1ST
             this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label31.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label31.Location = new System.Drawing.Point(972, 192);
+            this.label31.Location = new System.Drawing.Point(1080, 192);
             this.label31.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(175, 24);
+            this.label31.Size = new System.Drawing.Size(168, 26);
             this.label31.TabIndex = 141;
             this.label31.Text = "ロボット";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1241,10 +1241,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_41.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_41.FormattingEnabled = true;
-            this.comboBox1_41.Location = new System.Drawing.Point(832, 224);
+            this.comboBox1_41.Location = new System.Drawing.Point(912, 224);
             this.comboBox1_41.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_41.Name = "comboBox1_41";
-            this.comboBox1_41.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_41.Size = new System.Drawing.Size(160, 26);
             this.comboBox1_41.TabIndex = 140;
             // 
             // label32
@@ -1252,10 +1252,10 @@ namespace X61GX42H1ST
             this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label32.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label32.Location = new System.Drawing.Point(832, 192);
+            this.label32.Location = new System.Drawing.Point(912, 192);
             this.label32.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(139, 24);
+            this.label32.Size = new System.Drawing.Size(160, 26);
             this.label32.TabIndex = 139;
             this.label32.Text = "サイトデーブル";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1264,10 +1264,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_40.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_40.FormattingEnabled = true;
-            this.comboBox1_40.Location = new System.Drawing.Point(692, 224);
+            this.comboBox1_40.Location = new System.Drawing.Point(752, 224);
             this.comboBox1_40.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_40.Name = "comboBox1_40";
-            this.comboBox1_40.Size = new System.Drawing.Size(139, 26);
+            this.comboBox1_40.Size = new System.Drawing.Size(152, 26);
             this.comboBox1_40.TabIndex = 138;
             // 
             // label33
@@ -1275,10 +1275,10 @@ namespace X61GX42H1ST
             this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label33.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label33.Location = new System.Drawing.Point(692, 192);
+            this.label33.Location = new System.Drawing.Point(752, 192);
             this.label33.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(139, 24);
+            this.label33.Size = new System.Drawing.Size(152, 26);
             this.label33.TabIndex = 137;
             this.label33.Text = "コンビニフック";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1287,10 +1287,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_17.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_17.FormattingEnabled = true;
-            this.comboBox1_17.Location = new System.Drawing.Point(430, 224);
+            this.comboBox1_17.Location = new System.Drawing.Point(456, 224);
             this.comboBox1_17.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_17.Name = "comboBox1_17";
-            this.comboBox1_17.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1_17.Size = new System.Drawing.Size(168, 26);
             this.comboBox1_17.TabIndex = 136;
             // 
             // label34
@@ -1298,10 +1298,10 @@ namespace X61GX42H1ST
             this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label34.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label34.Location = new System.Drawing.Point(430, 192);
+            this.label34.Location = new System.Drawing.Point(456, 192);
             this.label34.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(121, 24);
+            this.label34.Size = new System.Drawing.Size(168, 26);
             this.label34.TabIndex = 135;
             this.label34.Text = "フットウイルランプ";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1310,10 +1310,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_16.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_16.FormattingEnabled = true;
-            this.comboBox1_16.Location = new System.Drawing.Point(230, 224);
+            this.comboBox1_16.Location = new System.Drawing.Point(256, 224);
             this.comboBox1_16.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_16.Name = "comboBox1_16";
-            this.comboBox1_16.Size = new System.Drawing.Size(199, 26);
+            this.comboBox1_16.Size = new System.Drawing.Size(192, 26);
             this.comboBox1_16.TabIndex = 134;
             // 
             // label35
@@ -1321,10 +1321,10 @@ namespace X61GX42H1ST
             this.label35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label35.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label35.Location = new System.Drawing.Point(230, 192);
+            this.label35.Location = new System.Drawing.Point(256, 192);
             this.label35.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(199, 24);
+            this.label35.Size = new System.Drawing.Size(192, 26);
             this.label35.TabIndex = 133;
             this.label35.Text = "背面ポケット";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1333,10 +1333,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_15.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_15.FormattingEnabled = true;
-            this.comboBox1_15.Location = new System.Drawing.Point(73, 222);
+            this.comboBox1_15.Location = new System.Drawing.Point(105, 222);
             this.comboBox1_15.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_15.Name = "comboBox1_15";
-            this.comboBox1_15.Size = new System.Drawing.Size(154, 26);
+            this.comboBox1_15.Size = new System.Drawing.Size(143, 26);
             this.comboBox1_15.TabIndex = 131;
             // 
             // label16
@@ -1344,10 +1344,10 @@ namespace X61GX42H1ST
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label16.Location = new System.Drawing.Point(73, 192);
+            this.label16.Location = new System.Drawing.Point(105, 192);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(154, 24);
+            this.label16.Size = new System.Drawing.Size(143, 26);
             this.label16.TabIndex = 130;
             this.label16.Text = "ランベー";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1356,10 +1356,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_14.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_14.FormattingEnabled = true;
-            this.comboBox1_14.Location = new System.Drawing.Point(1245, 152);
+            this.comboBox1_14.Location = new System.Drawing.Point(1376, 152);
             this.comboBox1_14.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_14.Name = "comboBox1_14";
-            this.comboBox1_14.Size = new System.Drawing.Size(144, 26);
+            this.comboBox1_14.Size = new System.Drawing.Size(216, 26);
             this.comboBox1_14.TabIndex = 129;
             // 
             // label15
@@ -1367,10 +1367,10 @@ namespace X61GX42H1ST
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label15.Location = new System.Drawing.Point(1245, 120);
+            this.label15.Location = new System.Drawing.Point(1376, 120);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(145, 24);
+            this.label15.Size = new System.Drawing.Size(216, 26);
             this.label15.TabIndex = 128;
             this.label15.Text = "ﾄﾙｸﾚﾝﾁ";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1379,10 +1379,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_13.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_13.FormattingEnabled = true;
-            this.comboBox1_13.Location = new System.Drawing.Point(1112, 152);
+            this.comboBox1_13.Location = new System.Drawing.Point(1160, 152);
             this.comboBox1_13.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_13.Name = "comboBox1_13";
-            this.comboBox1_13.Size = new System.Drawing.Size(132, 26);
+            this.comboBox1_13.Size = new System.Drawing.Size(208, 26);
             this.comboBox1_13.TabIndex = 127;
             // 
             // label14
@@ -1390,10 +1390,10 @@ namespace X61GX42H1ST
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label14.Location = new System.Drawing.Point(1112, 120);
+            this.label14.Location = new System.Drawing.Point(1160, 120);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(131, 24);
+            this.label14.Size = new System.Drawing.Size(208, 26);
             this.label14.TabIndex = 126;
             this.label14.Text = "表皮材";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1402,10 +1402,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_12.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_12.FormattingEnabled = true;
-            this.comboBox1_12.Location = new System.Drawing.Point(990, 152);
+            this.comboBox1_12.Location = new System.Drawing.Point(1056, 152);
             this.comboBox1_12.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_12.Name = "comboBox1_12";
-            this.comboBox1_12.Size = new System.Drawing.Size(117, 26);
+            this.comboBox1_12.Size = new System.Drawing.Size(96, 26);
             this.comboBox1_12.TabIndex = 125;
             // 
             // label13
@@ -1413,10 +1413,10 @@ namespace X61GX42H1ST
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label13.Location = new System.Drawing.Point(990, 120);
+            this.label13.Location = new System.Drawing.Point(1056, 120);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 24);
+            this.label13.Size = new System.Drawing.Size(96, 26);
             this.label13.TabIndex = 124;
             this.label13.Text = "空調";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1425,10 +1425,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_11.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_11.FormattingEnabled = true;
-            this.comboBox1_11.Location = new System.Drawing.Point(808, 152);
+            this.comboBox1_11.Location = new System.Drawing.Point(888, 152);
             this.comboBox1_11.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_11.Name = "comboBox1_11";
-            this.comboBox1_11.Size = new System.Drawing.Size(181, 26);
+            this.comboBox1_11.Size = new System.Drawing.Size(160, 26);
             this.comboBox1_11.TabIndex = 123;
             // 
             // label12
@@ -1436,10 +1436,10 @@ namespace X61GX42H1ST
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label12.Location = new System.Drawing.Point(808, 120);
+            this.label12.Location = new System.Drawing.Point(888, 120);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 24);
+            this.label12.Size = new System.Drawing.Size(160, 26);
             this.label12.TabIndex = 122;
             this.label12.Text = "着産センター";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1448,10 +1448,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_10.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_10.FormattingEnabled = true;
-            this.comboBox1_10.Location = new System.Drawing.Point(536, 152);
+            this.comboBox1_10.Location = new System.Drawing.Point(592, 152);
             this.comboBox1_10.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_10.Name = "comboBox1_10";
-            this.comboBox1_10.Size = new System.Drawing.Size(271, 26);
+            this.comboBox1_10.Size = new System.Drawing.Size(288, 26);
             this.comboBox1_10.TabIndex = 121;
             // 
             // label11
@@ -1459,10 +1459,10 @@ namespace X61GX42H1ST
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label11.Location = new System.Drawing.Point(536, 120);
+            this.label11.Location = new System.Drawing.Point(592, 120);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(271, 24);
+            this.label11.Size = new System.Drawing.Size(288, 26);
             this.label11.TabIndex = 120;
             this.label11.Text = "ﾍｯﾄﾞﾚｽﾄ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1471,10 +1471,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_9.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_9.FormattingEnabled = true;
-            this.comboBox1_9.Location = new System.Drawing.Point(365, 152);
+            this.comboBox1_9.Location = new System.Drawing.Point(376, 152);
             this.comboBox1_9.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_9.Name = "comboBox1_9";
-            this.comboBox1_9.Size = new System.Drawing.Size(169, 26);
+            this.comboBox1_9.Size = new System.Drawing.Size(208, 26);
             this.comboBox1_9.TabIndex = 119;
             // 
             // label10
@@ -1482,10 +1482,10 @@ namespace X61GX42H1ST
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label10.Location = new System.Drawing.Point(365, 120);
+            this.label10.Location = new System.Drawing.Point(376, 120);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(169, 24);
+            this.label10.Size = new System.Drawing.Size(208, 26);
             this.label10.TabIndex = 118;
             this.label10.Text = "ベックル";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1494,10 +1494,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_8.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_8.FormattingEnabled = true;
-            this.comboBox1_8.Location = new System.Drawing.Point(249, 152);
+            this.comboBox1_8.Location = new System.Drawing.Point(272, 152);
             this.comboBox1_8.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_8.Name = "comboBox1_8";
-            this.comboBox1_8.Size = new System.Drawing.Size(115, 26);
+            this.comboBox1_8.Size = new System.Drawing.Size(96, 26);
             this.comboBox1_8.TabIndex = 117;
             // 
             // label9
@@ -1505,10 +1505,10 @@ namespace X61GX42H1ST
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label9.Location = new System.Drawing.Point(249, 120);
+            this.label9.Location = new System.Drawing.Point(272, 120);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 24);
+            this.label9.Size = new System.Drawing.Size(96, 26);
             this.label9.TabIndex = 116;
             this.label9.Text = "ヒーター";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1517,10 +1517,10 @@ namespace X61GX42H1ST
             // 
             this.comboBox1_7.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.comboBox1_7.FormattingEnabled = true;
-            this.comboBox1_7.Location = new System.Drawing.Point(73, 152);
+            this.comboBox1_7.Location = new System.Drawing.Point(105, 152);
             this.comboBox1_7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.comboBox1_7.Name = "comboBox1_7";
-            this.comboBox1_7.Size = new System.Drawing.Size(175, 26);
+            this.comboBox1_7.Size = new System.Drawing.Size(159, 26);
             this.comboBox1_7.TabIndex = 115;
             // 
             // label8
@@ -1528,10 +1528,10 @@ namespace X61GX42H1ST
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("MS PGothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(73, 120);
+            this.label8.Location = new System.Drawing.Point(105, 120);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 24);
+            this.label8.Size = new System.Drawing.Size(159, 26);
             this.label8.TabIndex = 114;
             this.label8.Text = "AGタイプ";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1540,7 +1540,7 @@ namespace X61GX42H1ST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1675, 968);
+            this.ClientSize = new System.Drawing.Size(1677, 968);
             this.ControlBox = false;
             this.Controls.Add(this.comboBox1_20);
             this.Controls.Add(this.label48);

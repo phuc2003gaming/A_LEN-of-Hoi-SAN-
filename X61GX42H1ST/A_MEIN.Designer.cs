@@ -336,11 +336,12 @@ namespace X61GX42H1ST
             this.Print_Command.Name = "Print_Command";
             this.Print_Command.Size = new System.Drawing.Size(64, 29);
             this.Print_Command.Text = "印刷";
+ 
             // 
             // 車種情報印刷ToolStripMenuItem
             // 
             this.車種情報印刷ToolStripMenuItem.Name = "車種情報印刷ToolStripMenuItem";
-            this.車種情報印刷ToolStripMenuItem.Size = new System.Drawing.Size(222, 34);
+            this.車種情報印刷ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.車種情報印刷ToolStripMenuItem.Text = "車種情報印刷";
             this.車種情報印刷ToolStripMenuItem.Click += new System.EventHandler(this.Print_Command_Click);
             // 

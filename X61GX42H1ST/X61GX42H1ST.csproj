@@ -141,6 +141,7 @@
     <Compile Include="FileBox.Designer.cs">
       <DependentUpon>FileBox.cs</DependentUpon>
     </Compile>
+    <Content Include="FileName.txt" />
     <Compile Include="PlcRecv.cs">
       <SubType>Form</SubType>
     </Compile>
