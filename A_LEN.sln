@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X61GX42H1ST", "X61GX42H1ST\
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{C1CB4FB7-B8B9-420B-96EB-6E1FB852775A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST APP_", "TEST APP_\TEST APP_.csproj", "{E25CF9D7-251D-4CB6-9056-9CC89ED1B5A9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,10 +19,6 @@ Global
 		{C3394E2F-49CF-445D-B153-9204A7FF7047}.Release|x86.Build.0 = Release|x86
 		{C1CB4FB7-B8B9-420B-96EB-6E1FB852775A}.Debug|x86.ActiveCfg = Release
 		{C1CB4FB7-B8B9-420B-96EB-6E1FB852775A}.Release|x86.ActiveCfg = Release
-		{E25CF9D7-251D-4CB6-9056-9CC89ED1B5A9}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{E25CF9D7-251D-4CB6-9056-9CC89ED1B5A9}.Debug|x86.Build.0 = Debug|Any CPU
-		{E25CF9D7-251D-4CB6-9056-9CC89ED1B5A9}.Release|x86.ActiveCfg = Release|Any CPU
-		{E25CF9D7-251D-4CB6-9056-9CC89ED1B5A9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
